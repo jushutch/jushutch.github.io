@@ -92,6 +92,15 @@ li a.active {background-color: #FFCB05; color: black;}
   .dropdown-content a {text-align:center;}
 }
 
+.site-title {
+    position: relative;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: fit-content;
+}
+
 .home-header {
   background-image: url("img1.jpg");
   position: fixed;
@@ -105,19 +114,13 @@ li a.active {background-color: #FFCB05; color: black;}
 }
 
 .home-header > .quote {
-  text-align: center;
   background: rgba(255, 255, 255, .7);
-  position: relative;
-  transform: translate(-50%, -50%);
-  //padding-left: 40px;
-  //padding-right: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding: 40px;
-  left: 50%;
-  top: 50%;
-  width: fit-content;
 }
 
-.home-page > .bar {
+.bar {
   background-color: #16467e;
   position: relative;
   width: 100%;
@@ -130,7 +133,6 @@ li a.active {background-color: #FFCB05; color: black;}
   position: absolute;
   width: 100%;
   top: 100vh;
-  margin:0;
   padding: 0;
   z-index: 1;
 }
@@ -146,7 +148,7 @@ li a.active {background-color: #FFCB05; color: black;}
   z-index: 1;
 }
 
-.home-page p {
+//.home-page p {
   position: relative;
   font-family: serif;
   font-size: 18px;
@@ -154,4 +156,25 @@ li a.active {background-color: #FFCB05; color: black;}
   width: 80%;
   height: 300px;
   left: 10%;
+}
+
+.links {
+    //background-color: grey;
+    position: relative;
+    width: fit-content;
+    left: 75%;
+}
+
+.links a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.logo {
+    background-color: grey;
+    padding: 10px;
+    margin: 0;
+    width: 30px;
+    height: 30px;
 }
