@@ -86,10 +86,18 @@ li a.active:hover {
 li a.active {background-color: #FFCB05; color: black;}
 
 @media screen and (max-width: 1000px) {
-  .menu {width:100%; left:0;position:absolute;}
+  .menu {width:100%; left:0; position:absolute;}
   .topnav li,
   .dropdown-content {float: none; width: 100%;}
   .dropdown-content a {text-align:center;}
+  body .links {
+      position: absolute;
+      transform: translate(-50%);
+      left: 50%;
+      bottom: 0px;
+      margin: 0;
+      padding: 0;
+   }
 }
 
 .site-title {
@@ -160,9 +168,10 @@ li a.active {background-color: #FFCB05; color: black;}
 
 .links {
     //background-color: grey;
-    position: relative;
+    position: absolute;
     width: fit-content;
     left: 75%;
+    bottom: 20px;
 }
 
 .links a {
@@ -172,9 +181,8 @@ li a.active {background-color: #FFCB05; color: black;}
 }
 
 .logo {
-    background-color: grey;
+    //background-color: grey;
     padding: 10px;
     margin: 0;
-    width: 30px;
     height: 30px;
 }
