@@ -34,14 +34,14 @@ body {
   overflow: hidden;
 }
 
-li {
+.topnav li {
   float: left;
   overflow: hidden;
   margin: 0;
   padding: 0;
 }
 
-li a, .dropbtn {
+.topnav li a, .dropbtn {
   background-color: #16467e;
   text-align: center;
   color: white;
@@ -75,30 +75,15 @@ li a, .dropbtn {
   opacity: 1;
 }
 
-li a:hover:not(.active) {
+.topnav li a:hover:not(.active) {
   background-color: #236dc6;
 }
 
-li a.active:hover {
+.topnav li a.active:hover {
   background-color: #ffea97;
 }
 
-li a.active {background-color: #FFCB05; color: black;}
-
-@media screen and (max-width: 1000px) {
-  .menu {width:100%; left:0; position:absolute;}
-  .topnav li,
-  .dropdown-content {float: none; width: 100%;}
-  .dropdown-content a {text-align:center;}
-  body .links {
-      position: absolute;
-      transform: translate(-50%);
-      left: 50%;
-      bottom: 0px;
-      margin: 0;
-      padding: 0;
-   }
-}
+.topnav li a.active {background-color: #FFCB05; color: black;}
 
 .site-title {
     position: relative;
@@ -123,8 +108,6 @@ li a.active {background-color: #FFCB05; color: black;}
 
 .home-header > .quote {
   background: rgba(255, 255, 255, .7);
-  padding-left: 40px;
-  padding-right: 40px;
   padding: 40px;
 }
 
@@ -138,20 +121,27 @@ li a.active {background-color: #FFCB05; color: black;}
 
 .home-page {
   background-color: #236dc6;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 100vh;
+  top: 100%;
   padding: 0;
   z-index: 1;
+}
+
+.home-page > .page-header {
+    text-align: center;
+    font-size: 30px;
+    color: #FFCB05;
 }
 
 .home-page > .home-tab {
   position: sticky;
   top: 0;
+  width: fit-content;
   background-color: #FFCB05;
-  width: 15%;
   padding: 10px;
   padding-right: 40px;
+  padding-left: 100px;
   text-align: right;
   z-index: 1;
 }
@@ -166,12 +156,40 @@ li a.active {background-color: #FFCB05; color: black;}
   left: 10%;
 }
 
+.skill-container {
+    display: flex;
+    justify-content: center;
+}
+
+.skill {
+    display: list-item;
+    width: 400px;
+    height: 20px;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 6px;
+    float: right;
+    margin-left: 5px;
+    vertical-align: middle;
+    background-color: #FFCB05;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .links {
     //background-color: grey;
     position: absolute;
     width: fit-content;
     left: 75%;
-    bottom: 20px;
+    bottom: 12px;
 }
 
 .links a {
