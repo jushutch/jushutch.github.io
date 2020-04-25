@@ -111,6 +111,10 @@ body {
   padding: 40px;
 }
 
+.quote hr {
+    display: none;
+}
+
 .bar {
   background-color: #16467e;
   position: relative;

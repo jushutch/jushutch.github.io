@@ -1,12 +1,18 @@
 @media screen and (max-width: 1000px) {
     .menu {
+        display: none;
         width: 100%;
         left: 0;
         position: absolute;
     }
 
-    .quote {
-        display: none;
+    .home-header > .quote {
+        background: rgba(255, 255, 255, 0);
+        padding: 0px;
+    }
+
+    .home-header .quote hr {
+        display: block;
     }
 
     .home-header {
