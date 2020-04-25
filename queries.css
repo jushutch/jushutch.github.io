@@ -1,0 +1,37 @@
+@media screen and (max-width: 1000px) {
+    .menu {
+        width: 100%;
+        left: 0;
+        position: absolute;
+    }
+
+    .quote {
+        display: none;
+    }
+
+    .home-header {
+        position: absolute;
+        top: 0;
+    }
+
+    .topnav li,
+    .dropdown-content {
+        float: none;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        text-align: center;
+    }
+
+    .skill {
+        width: 300px;
+    }
+
+    .links {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        bottom: 12px;
+    }
+}
