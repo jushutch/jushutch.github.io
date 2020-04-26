@@ -214,6 +214,27 @@ body {
     display: inline-block;
 }
 
+.project {
+    padding-top: 30px;
+    text-align:center;
+    color: white;
+}
+
+.project .project-title {
+    margin: 0;
+    vertical-align:top;
+    padding: 0;
+    width: 200px;
+    text-align: left;
+    display:inline-block;
+}
+
+.project .project-details {
+    width: 500px;
+    text-align:left;
+    display:inline-block;
+}
+
 .links {
     //background-color: grey;
     position: absolute;
