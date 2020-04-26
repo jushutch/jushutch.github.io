@@ -132,11 +132,11 @@ body {
   z-index: 1;
 }
 
-.home-page > .page-header {
+.home-page .page-header {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color: #FFCB05;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .home-page > .home-tab {
@@ -161,6 +161,20 @@ body {
   left: 10%;
 }
 
+.education {
+    font-size: 18px;
+    color: white;
+}
+
+.coursework {
+    list-style-type: none;
+    padding: 15px;
+    color: white;
+    display: inline-block;
+    font-size: 18px;
+    text-align: left;
+}
+
 .skill-container {
     display: flex;
     justify-content: center;
@@ -173,7 +187,11 @@ body {
     margin: 0;
     padding: 5px;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.skill:hover {
+    background-color: #4982c6;
 }
 
 .dot {
