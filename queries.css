@@ -38,6 +38,10 @@
         width: 300px;
     }
 
+    #footer-title {
+        top:35%;
+    }
+
     .links {
         position: absolute;
         transform: translate(-50%);
