@@ -7,8 +7,8 @@
     }
 
     .home-header > .quote {
-        background: rgba(255, 255, 255, 0);
-        padding: 0px;
+        background: rgba(255, 255, 255, .7);
+        padding: 10px;
     }
 
     .home-header .quote hr {
