@@ -1,3 +1,9 @@
+@media screen and (max-width: 720px) {
+    .project .project-title {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     .menu {
         display: none;
@@ -50,3 +56,4 @@
         bottom: 12px;
     }
 }
+

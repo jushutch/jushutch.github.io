@@ -17,7 +17,7 @@ body {
 
 .menu {
   position: fixed;
-  left: 75%;
+  left: 0%;
   top: 0%;
   margin: 0;
   padding: 0;
@@ -32,8 +32,8 @@ body {
 }
 
 .topnav li {
-  float: left;
-  overflow: hidden;
+  //float: left;
+  //overflow: hidden;
   margin: 0;
   padding: 0;
 }
@@ -131,7 +131,7 @@ body {
 
 .home-page .page-header {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     color: #FFCB05;
     padding-top: 20px;
     margin: 0;
