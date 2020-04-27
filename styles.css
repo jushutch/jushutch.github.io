@@ -230,6 +230,7 @@ body {
 }
 
 .project .project-details {
+    width: 100%;
     max-width: 500px;
     text-align:left;
     display:inline-block;
