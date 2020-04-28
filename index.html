@@ -8,247 +8,236 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="queries.css">
 </head>
-  <body>
-      <nav role="navigation" class="menu">
-          <ul class="topnav">
-              <!--<li class="dropdown">
-        <a href="#about" class="dropbtn">About</a>
-        <div class="dropdown-content">
-            <a href='#'>Story</a>
-            <a href='#'>Experience</a>
-            <a href='#'>Academics</a>
-            <a href='#'>Portfolio</a>
+<body>
+
+    <nav role="navigation" class="menu">
+        <img onClick="toggleMenu()" id="menu-button" src="menu_icon.png" style="height:40px;cursor:pointer;padding:30px;"></img>
+        <ul id="topnav" class="topnav">
+            <li><a id="m-intro" href="#intro">Intro</a></li>
+            <li><a id="m-ed" href="#education">Education</a></li>
+            <li><a id="m-skills" href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#work">Work Experience</a></li>
+            <li><a href="#extra">Extracurricular</a></li>
+        </ul>
+    </nav>
+    <div class="home-header">
+        <div class="quote site-title">
+            <p style="font-size:20px;margin:0;padding-bottom:0;">The professional site of</p>
+            <h1 style="font-size:50px;margin:0;padding:0;">Justin Time Hutchins</h1>
+            <!--<hr style="width:200px;background-color:black;border:none;height:2px;" />-->
         </div>
-    </li>-->
-              <li><a href="#intro" class="active">Intro</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#work">Work Experience</a></li>
-              <li><a href="#extra">Extracurricular</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-      </nav>
-      <div class="home-header">
-          <div class="quote site-title">
-              <p style="font-size:20px;margin:0;padding-bottom:0;">The professional site of</p>
-              <h1 style="font-size:50px;margin:0;padding:0;">Justin Time Hutchins</h1>
-              <!--<hr style="width:200px;background-color:black;border:none;height:2px;" />-->
-          </div>
-      </div>
-      <div class="home-page">
-          <div class="bar" style="height:auto;">
-              <h1 class="page-header" id="education">Education</h1>
-              <hr class="header-line" style="width:210px;" />
-              <div style="text-align:center;">
-                  <div style="display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;">
-                      <div style="text-align:center;">
-                          <img src="block-m-maize.png" alt="University of Michigan logo" style="height:100px;" />
-                      </div>
-                      <div style="text-align:center;width:auto;">
-                          <p class="education">
-                              University of Michigan, Ann Arbor<br />Class of 2022, Honors Program<br />
-                              L.S.A. Computer Science B.S.<br />Current G.P.A.: 3.5/4.0
-                          </p>
-                      </div>
-                  </div>
-                  <ul class="coursework">
-                      <li style="font-size:20px;color:#FFCB05;">Relevant Coursework</li>
-                      <li>Data Structures and Algorithms</li>
-                      <li>Programming and Data Structures</li>
-                      <li>Elementary Programming Concepts</li>
-                      <li>Introduction to Computer Organization</li>
-                      <li>Discrete Mathematics</li>
-                      <li>Introduction to Statistics and Data Analysis</li>
-                      <li>Honors Calculus I</li>
-                      <li>Honors Calculus II</li>
-                      <li>Honors Physics I: Kinematics</li>
-                      <li>Physics II: Electricity and Magnetism</li>
-                  </ul>
-              </div>
-          </div>
-          <!--<h1 id="home" class="home-tab">Home</h1>
-    <p>Insert paragraph here</p>
-    <h1 class="home-tab">Influence</h1>
-    <p>Insert paragraph here</p>-->
-          <h1 class="page-header" id="skills">Skills</h1>
-          <hr class="header-line" style="width:160px;" />
-          <div class="skill-container">
-              <ul style="margin-bottom:50px;list-style-type:none;padding-left:0;">
-                  <li class="skill">
-                      <span class="skill-name">C++</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">C</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">Microsoft Office</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">Ubuntu/Linux</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">Git</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">HTML</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">CSS</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">Python</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-                  <li class="skill">
-                      <span class="skill-name">R</span>
-                      <span class="dot"></span>
-                      <span class="dot"></span>
-                  </li>
-              </ul>
-          </div>
-          <div class="bar" style="height:auto;">
-              <h1 class="page-header" id="projects">Projects</h1>
-              <hr class="header-line" style="width:200px;" />
-              <div class="project">
-                  <div class="project-title">
-                      <h3 style="margin:0;">Coordinate Path Finder</h3>
-                      <p style="margin:0;">EECS 281</p>
-                  </div>
-                  <div class="project-details">
-                      <ul>
-                          <li>
-                              Calculated time efficient, near-optimal and optimal solutions to the Traveling salesman problem (visiting
-                              given coordinates and returning to the starting point) using algorithms and heuristics such as Arbitrary
-                              Insertion, Nearest Neighbor, and Branch and Bound.
-                          </li>
-                          <li>
-                              Utilized Prim's and Kruskal's algorithms to produce Minimum Spanning Trees that connected over 10,000
-                              unique coordinates under constraints.
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="project">
-                  <div class="project-title">
-                      <h3 style="margin:0;">Error-Log Interface</h3>
-                      <p style="margin:0;">EECS 281</p>
-                  </div>
-                  <div class="project-details">
-                      <ul>
-                          <li>
-                              Designed and programmed an interface to manage error log data files with search and retrieve functions and
-                              developed an excerpt list for easier organization and efficiency.
-                          </li>
-                          <li>
-                              Coded using hash tables and various sorting algorithms such as Merge Sort, Quick Sort, Insertion Sort, and
-                              Counting Sort, while analyzing and optimizing time and space complexity.
-                          </li>
-                          <li>
-                              Scored 100% on the final project submission, determined by rigorous tests, thorough debugging checks, and
-                              strict time and space complexity constraints.
-                          </li>
-                          <li>
-                              Wrote 20+ detailed test files that included up to 40,000 error log entries in order to stress test and debug
-                              edge cases.
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="project">
-                  <div class="project-title">
-                      <h3 style="margin:0;">Pipeline Processor Simulator</h3>
-                      <p style="margin:0;">EECS 370</p>
-                  </div>
-                  <div class="project-details">
-                      <ul>
-                          <li>
-                              Simulated a six stage, eight register pipeline processor that runs 32-bit assembly instructions based on
-                              ARMv8 assembly language. Used an instruction and data cache for loading and storing memory, with command line
-                              options for set-associativity, block size, and blocks per set.
-                          </li>
-                          <li>
-                              Tool for assessing cache hit rates under diferent parameters to achieve optimal performance and minimize
-                              program latency.
-                          </li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <h1 class="page-header" id="extra">Extracurricular</h1>
-          <hr class="header-line" style="width:300px;" />
-          <div class="project">
-              <div class="project-title">
-                  <h3 style="margin:0;">Michigan Hackers</h3>
-                  <p style="margin:0;">Security Team Lead</p>
-                  <p style="margin:0;">2020 - Current</p>
-              </div>
-              <div class="project-details">
-                  <ul>
-                      <li>
-                          Joined the Security Team, working with 15+ other members to learn and practice security concepts in the
-                          Linux environment.
-                      </li>
-                      <li>
-                          Worked with the Interviewing Director to gain practical interviewing experience, as well as insight into the
-                          application and interviewing processes of large tech companies.
-                      </li>
-                      <li>
-                          Demonstrated passion and commitment to become an official Core Team Member for the most influential
-                          computer science based student organization on campus.
-                      </li>
-                  </ul>
-              </div>
-          </div>
-          <div class="bar" style="height:200px;z-index:10;">
-              <div class="site-title" id="footer-title" style="color:white;">
-                  <p style="font-size:16px;margin:0;padding-bottom:0;">The Professional Site of</p>
-                  <h1 style="font-size:40px;margin:0;padding:0;">Justin Time Hutchins</h1>
-              </div>
-              <div class="links">
-                  <a href="https://github.com/jushutch">
-                      <img class="logo" alt="Find me on Github" src="GitHub-Mark-Light-120px-plus.png" />
-                  </a>
-                  <a href="https://www.instagram.com/justin.hutchins/">
-                      <img class="logo" alt="Find me on Instagram" src="glyph-logo_May2016.png" />
-                  </a>
-                  <a href="https://www.twitter.com/jushutch">
-                      <img class="logo" alt="Find me on Twitter" src="Twitter_Logo_WhiteOnImage.png" />
-                  </a>
-                  <a href="mailto:jushutch@umich.edu">
-                      <img class="logo" alt="Email me" src="gmail_logo.png" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/jushutch/">
-                      <img class="logo" alt="Find me on LinkedIn" src="LI-In-Bug-White.png" />
-                  </a>
-              </div>
-          </div>
-      </div>
-  </body>
+    </div>
+    <div class="home-page">
+        <div class="bar" style="height:auto;">
+            <h1 class="page-header" id="education">Education</h1>
+            <hr class="header-line" style="width:210px;" />
+            <div style="text-align:center;">
+                <div style="display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;">
+                    <div style="text-align:center;">
+                        <img src="block-m-maize.png" alt="University of Michigan logo" style="height:100px;" />
+                    </div>
+                    <div style="text-align:center;width:auto;">
+                        <p class="education">
+                            University of Michigan, Ann Arbor<br />Class of 2022, Honors Program<br />
+                            L.S.A. Computer Science B.S.<br />Current G.P.A.: 3.5/4.0
+                        </p>
+                    </div>
+                </div>
+                <ul class="coursework">
+                    <li style="font-size:20px;color:#FFCB05;">Relevant Coursework</li>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Programming and Data Structures</li>
+                    <li>Elementary Programming Concepts</li>
+                    <li>Introduction to Computer Organization</li>
+                    <li>Discrete Mathematics</li>
+                    <li>Introduction to Statistics and Data Analysis</li>
+                    <li>Honors Calculus I</li>
+                    <li>Honors Calculus II</li>
+                    <li>Honors Physics I: Kinematics</li>
+                    <li>Physics II: Electricity and Magnetism</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="page-header" id="skills">Skills</h1>
+        <hr class="header-line" style="width:160px;" />
+        <div class="skill-container">
+            <ul style="margin-bottom:50px;list-style-type:none;padding-left:0;">
+                <li class="skill">
+                    <span class="skill-name">C++</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">C</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">Microsoft Office</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">Ubuntu/Linux</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">Git</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">HTML</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">CSS</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">Python</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+                <li class="skill">
+                    <span class="skill-name">R</span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="bar" style="height:auto;">
+            <h1 class="page-header" id="projects">Projects</h1>
+            <hr class="header-line" style="width:200px;" />
+            <div class="project">
+                <div class="project-title">
+                    <h3 style="margin:0;">Coordinate Path Finder</h3>
+                    <p style="margin:0;">EECS 281</p>
+                </div>
+                <div class="project-details">
+                    <ul>
+                        <li>
+                            Calculated time efficient, near-optimal and optimal solutions to the Traveling salesman problem (visiting
+                            given coordinates and returning to the starting point) using algorithms and heuristics such as Arbitrary
+                            Insertion, Nearest Neighbor, and Branch and Bound.
+                        </li>
+                        <li>
+                            Utilized Prim's and Kruskal's algorithms to produce Minimum Spanning Trees that connected over 10,000
+                            unique coordinates under constraints.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    <h3 style="margin:0;">Error-Log Interface</h3>
+                    <p style="margin:0;">EECS 281</p>
+                </div>
+                <div class="project-details">
+                    <ul>
+                        <li>
+                            Designed and programmed an interface to manage error log data files with search and retrieve functions and
+                            developed an excerpt list for easier organization and efficiency.
+                        </li>
+                        <li>
+                            Coded using hash tables and various sorting algorithms such as Merge Sort, Quick Sort, Insertion Sort, and
+                            Counting Sort, while analyzing and optimizing time and space complexity.
+                        </li>
+                        <li>
+                            Scored 100% on the final project submission, determined by rigorous tests, thorough debugging checks, and
+                            strict time and space complexity constraints.
+                        </li>
+                        <li>
+                            Wrote 20+ detailed test files that included up to 40,000 error log entries in order to stress test and debug
+                            edge cases.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-title">
+                    <h3 style="margin:0;">Pipeline Processor Simulator</h3>
+                    <p style="margin:0;">EECS 370</p>
+                </div>
+                <div class="project-details">
+                    <ul>
+                        <li>
+                            Simulated a six stage, eight register pipeline processor that runs 32-bit assembly instructions based on
+                            ARMv8 assembly language. Used an instruction and data cache for loading and storing memory, with command line
+                            options for set-associativity, block size, and blocks per set.
+                        </li>
+                        <li>
+                            Tool for assessing cache hit rates under diferent parameters to achieve optimal performance and minimize
+                            program latency.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 class="page-header" id="extra">Extracurricular</h1>
+        <hr class="header-line" style="width:300px;" />
+        <div class="project">
+            <div class="project-title">
+                <h3 style="margin:0;">Michigan Hackers</h3>
+                <p style="margin:0;">Security Team Lead</p>
+                <p style="margin:0;">2020 - Current</p>
+            </div>
+            <div class="project-details">
+                <ul>
+                    <li>
+                        Joined the Security Team, working with 15+ other members to learn and practice security concepts in the
+                        Linux environment.
+                    </li>
+                    <li>
+                        Worked with the Interviewing Director to gain practical interviewing experience, as well as insight into the
+                        application and interviewing processes of large tech companies.
+                    </li>
+                    <li>
+                        Demonstrated passion and commitment to become an official Core Team Member for the most influential
+                        computer science based student organization on campus.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bar" style="height:200px;z-index:10;">
+            <div class="site-title" id="footer-title" style="color:white;">
+                <p style="font-size:16px;margin:0;padding-bottom:0;">The Professional Site of</p>
+                <h1 style="font-size:40px;margin:0;padding:0;">Justin Time Hutchins</h1>
+            </div>
+            <div class="links">
+                <a href="https://github.com/jushutch">
+                    <img class="logo" alt="Find me on Github" src="GitHub-Mark-Light-120px-plus.png" />
+                </a>
+                <a href="https://www.instagram.com/justin.hutchins/">
+                    <img class="logo" alt="Find me on Instagram" src="glyph-logo_May2016.png" />
+                </a>
+                <a href="https://www.twitter.com/jushutch">
+                    <img class="logo" alt="Find me on Twitter" src="Twitter_Logo_WhiteOnImage.png" />
+                </a>
+                <a href="mailto:jushutch@umich.edu">
+                    <img class="logo" alt="Email me" src="gmail_logo.png" />
+                </a>
+                <a href="https://www.linkedin.com/in/jushutch/">
+                    <img class="logo" alt="Find me on LinkedIn" src="LI-In-Bug-White.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--<script src="menu.js" type="text/javascript"></script>-->
+</body>
 </html>
