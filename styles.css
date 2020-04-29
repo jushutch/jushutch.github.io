@@ -72,10 +72,11 @@ body {
 .site-title {
     position: relative;
     text-align: center;
-    transform: translate(-50%, -50%);
-    left: 50%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    //left: 50%;
     top: 50%;
-    width: fit-content;
+    width: 500px;
 }
 
 .home-header {
@@ -228,11 +229,29 @@ body {
     display:inline-block;
 }
 
-.links {
-    //background-color: grey;
+.footer-menu {
+    width: auto;
     position: absolute;
-    width: fit-content;
-    left: 75%;
+    top: 20%;
+    margin: 0;
+    padding: 0;
+    left: 3%;
+}
+
+.footer-menu ul li a{
+    text-decoration:none;
+    color: white;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration:none;
+    color: black;
+}
+
+.links {
+    position: absolute;
+    width: auto;
+    left: 70%;
     bottom: 12px;
 }
 
