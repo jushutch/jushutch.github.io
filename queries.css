@@ -12,12 +12,6 @@
         position: absolute;
     }
 
-    .home-header > .quote {
-        background: rgba(255, 255, 255, .7);
-        //padding: 10px;
-        width: fit-content;
-    }
-
     .home-header .quote hr {
         display: block;
     }
@@ -25,16 +19,6 @@
     .home-header {
         position: absolute;
         top: 0;
-    }
-
-    .topnav li,
-    .dropdown-content {
-        float: none;
-        width: 100%;
-    }
-
-    .dropdown-content a {
-        text-align: center;
     }
 
     .coursework {
@@ -50,9 +34,9 @@
     }
 
     .links {
-        position: absolute;
+        left:50%;
+        margin: 0;
         transform: translate(-50%);
-        left: 50%;
         bottom: 12px;
     }
 
