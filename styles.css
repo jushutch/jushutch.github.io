@@ -244,3 +244,20 @@ body {
 .logo:hover {
     filter:invert(100%);
 }
+
+#download-link {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    width: fit-content;
+    margin: 0;
+}
+
+#download-link:hover {
+    color: black;
+}
