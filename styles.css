@@ -80,7 +80,7 @@ body {
 }
 
 .home-header {
-  background-image: url("img1.jpg");
+  background-image: url("images/img1.jpg");
   position: fixed;
   margin: 0;
   padding: 0;
@@ -210,12 +210,12 @@ body {
     display:inline-block;
 }
 
-.arts-link {
+.link {
     text-decoration:none;
     color:#FFCB05;
 }
 
-.arts-link:hover {
+.link:hover {
     color: white;
 }
 

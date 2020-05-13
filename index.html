@@ -4,13 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
     <title>Justin Hutchins</title>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/png" href="logo.png" />
+    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="queries.css">
 </head>
 <body>
     <nav role="navigation" class="menu">
-        <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;"></img>
+        <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;"></img>
         <ul id="topnav" class="topnav">
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
@@ -40,14 +40,17 @@
                     I am looking to gain more experience with computer security, databases, web-design, and distributed systems.
                 </p>
                 <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
-                    <span style="padding-left:2em;"/>Currently a rising junior at the University of Michigan, pursuing a bachelor's degree
+                    <span style="padding-left:2em;" />Currently a rising junior at the University of Michigan, pursuing a bachelor's degree
                     in Computer Science with a focus on computer security. I'm passionate about the arts and enjoy music,
-                    movies, video games, and reading. Glass Animals is one of my favorite bands, I love The Shining and horror
-                    in general, I've spent a lot of time playing Dark Souls III and Pokemon Emerald, and Lord of the Rings is my
+                    movies, video games, and reading. <a class="link" href=https://opensource.glassanimals.com/>Glass Animals</a> is one of my favorite bands,
+                    I love <a class="link" href="https://www.imdb.com/title/tt0081505/>">The Shining</a> and horror
+                    in general, I've spent a lot of time playing <a class="link" href="https://en.wikipedia.org/wiki/Dark_Souls_III">Dark Souls III</a>
+                    and <a class="link" href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Emerald">Pokemon Emerald</a>,
+                    and <a class="link" href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings">The Lord of the Rings</a> is my
                     all-time favorite book series. Feel free to ask me about anything art related if you want an interesting
                     conversation!
                 </p>
-                <img src="headshot_circle.png" style="height:120px;display:inline-block;" />
+                <img src="images/headshot_circle.png" style="height:120px;display:inline-block;" />
             </div>
         </div>
         <h1 class="page-header" id="education">Education</h1>
@@ -55,7 +58,7 @@
         <div style="text-align:center;">
             <div style="display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;">
                 <div style="text-align:center;">
-                    <img src="block-m-maize.png" alt="University of Michigan logo" style="height:100px;" />
+                    <img src="images/block-m-maize.png" alt="University of Michigan logo" style="height:100px;" />
                 </div>
                 <div style="text-align:center;width:auto;">
                     <p class="education">
@@ -153,13 +156,18 @@
             <div class="project-details">
                 <ul>
                     <li>
-                        Simulated a six stage, eight register pipeline processor that runs 32-bit assembly instructions based on
-                        ARMv8 assembly language. Used an instruction and data cache for loading and storing memory, with command line
-                        options for set-associativity, block size, and blocks per set.
+                        Simulated a six stage, eight register pipeline processor with an instruction and data cache that runs 
+                        32-bit assembly instructions based on the ARMv8 assembly language. 
+                    <li>
+                        Used data forwarding to resolve data hazards and speculate and squash to resolve control hazards, using 
+                        methods such as predicting always taken, always not taken, forward not taken and backwards taken,
+                        a one bit global predictor, and a two bit global predictor. Returns the optimal branch prediction method that
+                        minimizes the number of cycles per instruction of the program.
                     </li>
                     <li>
-                        Tool for assessing cache hit rates under diferent parameters to achieve optimal performance and minimize
-                        program latency.
+                        Given a cache size, determined the optimal block size, number of blocks per set, and set-asssociativity 
+                        for both the instruction cache and data cache to maximize their respective hit rates during the lifetime
+                        of the program.
                     </li>
                 </ul>
             </div>
@@ -224,7 +232,7 @@
                 <div class="project-details">
                     <ul>
                         <li>
-                            Write weekly blog posts for <i><a class="arts-link" href="http://artsatmichigan.umich.edu/ink/author/justin-hutchins/" target="_blank">arts, ink.</a></i> that focus on art related topics in a clear and concise manner.
+                            Write weekly blog posts for <i><a class="link" href="http://artsatmichigan.umich.edu/ink/author/justin-hutchins/" target="_blank">arts, ink.</a></i> that focus on art related topics in a clear and concise manner.
                         </li>
                         <li>
                             Maintain positive interactions with readers and promote audience growth in order to
@@ -302,19 +310,19 @@
             <a href="Justin Hutchins Resume.pdf" id="download-link" download target="_blank">Download Resume</a>
             <div class="links">
                 <a href="https://github.com/jushutch" target="_blank">
-                    <img class="logo" alt="Find me on Github" src="GitHub-Mark-Light-120px-plus.png" />
+                    <img class="logo" alt="Find me on Github" src="images/GitHub-Mark-Light-120px-plus.png" />
                 </a>
                 <a href="https://www.instagram.com/justin.hutchins/" target="_blank">
-                    <img class="logo" alt="Find me on Instagram" src="glyph-logo_May2016.png" />
+                    <img class="logo" alt="Find me on Instagram" src="images/glyph-logo_May2016.png" />
                 </a>
                 <a href="https://www.twitter.com/jushutch" target="_blank">
-                    <img class="logo" alt="Find me on Twitter" src="Twitter_Logo_WhiteOnImage.png" />
+                    <img class="logo" alt="Find me on Twitter" src="images/Twitter_Logo_WhiteOnImage.png" />
                 </a>
                 <a href="mailto:jushutch@umich.edu" target="_blank">
-                    <img class="logo" alt="Email me" src="gmail_logo.png" />
+                    <img class="logo" alt="Email me" src="images/gmail_logo.png" />
                 </a>
                 <a href="https://www.linkedin.com/in/jushutch/" target="_blank">
-                    <img class="logo" alt="Find me on LinkedIn" src="LI-In-Bug-White.png" />
+                    <img class="logo" alt="Find me on LinkedIn" src="images/LI-In-Bug-White.png" />
                 </a>
             </div>
         </div>
