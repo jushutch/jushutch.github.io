@@ -7,7 +7,10 @@
     <meta name="title" content="Justin Hutchins" />
     <meta name="decription" content="The online resume of Justin Hutchins" />
     <meta name="author" content="Justin Hutchins" />
-    <meta property="og:image" content="images/site_thumbnail.png">
+    <meta property='og:title' content='Justin Hutchins' />
+    <meta property='og:description' content='A web version of my resume that I built as an exercise in HTML and CSS. Hosted with Github Pages, allowing for version control.' />
+    <meta property='og:url' content='https://jushutch.github.io/'>
+    <meta property='og:image' content='images/site_thumbnail.png'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css">
@@ -36,14 +39,6 @@
             <h1 class="page-header" id="about">About</h1>
             <hr class="header-line" style="width:110px;" />
             <div class="about" style="text-align:center;">
-                <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:none;">
-                    Currently a rising junior at the University of Michigan, pursuing a bachelor's degree
-                    in Computer Science with a focus on computer security. My passion for programming was first
-                    realized when I was young and began studying independently; I
-                    explored languages such as Ruby, C++, Microsoft Visual Basic, and Batch, along with HTML and CSS.
-                    My favorite computer science topics in college have been algorithm complexity and optimization.
-                    I am looking to gain more experience with computer security, databases, web-design, and distributed systems.
-                </p>
                 <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
                     <span style="padding-left:2em;" />Currently a rising junior at the University of Michigan, pursuing a bachelor's degree
                     in Computer Science with a focus on computer security. I'm passionate about the arts and enjoy music,
@@ -352,10 +347,9 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="menu.js"></script>
-        <script type="text/javascript">
-            function toggleMenu() {
-                document.getElementById("topnav").classList.toggle("show");
+    <script type="text/javascript">
+        function toggleMenu() {
+            document.getElementById("topnav").classList.toggle("show");
         }
     </script>
 </body>
