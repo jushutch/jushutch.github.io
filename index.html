@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
     <title>Justin Hutchins</title>
     <meta charset="UTF-8">
+    <meta name="title" content="Justin Hutchins" />
+    <meta name="decription" content="The online resume of Justin Hutchins" />
+    <meta name="author" content="Justin Hutchins" />
+    <meta property="og:image" content="images/site_thumbnail.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="queries.css">
@@ -12,12 +17,12 @@
     <nav role="navigation" class="menu">
         <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;"></img>
         <ul id="topnav" class="topnav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#work">Work Experience</a></li>
-            <li><a href="#extra">Extracurricular</a></li>
+            <li><a href="#about" id="aboutMenu">About</a></li>
+            <li><a href="#education" id="edMenu">Education</a></li>
+            <li><a href="#skills" id="skillMenu">Skills</a></li>
+            <li><a href="#projects" id="projMenu">Projects</a></li>
+            <li><a href="#work" id="workMenu">Work Experience</a></li>
+            <li><a href="#extra" id="extraMenu">Extracurricular</a></li>
         </ul>
     </nav>
     <div id="home-header" class="home-header">
@@ -42,7 +47,7 @@
                 <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
                     <span style="padding-left:2em;" />Currently a rising junior at the University of Michigan, pursuing a bachelor's degree
                     in Computer Science with a focus on computer security. I'm passionate about the arts and enjoy music,
-                    movies, video games, and reading. <a class="link" href=https://opensource.glassanimals.com/>Glass Animals</a> is one of my favorite bands,
+                    movies, video games, and reading. <a class="link" href=https://opensource.glassanimals.com />Glass Animals</a> is one of my favorite bands,
                     I love <a class="link" href="https://www.imdb.com/title/tt0081505/>">The Shining</a> and horror
                     in general, I've spent a lot of time playing <a class="link" href="https://en.wikipedia.org/wiki/Dark_Souls_III">Dark Souls III</a>
                     and <a class="link" href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Emerald">Pokemon Emerald</a>,
@@ -127,8 +132,19 @@
                         <span class="dot"></span>
                     </li>
                     <li class="skill">
+                        <span class="skill-name">PHP</span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="skill">
                         <span class="skill-name">CSS</span>
                         <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="skill">
+                        <span class="skill-name">MySQL</span>
                         <span class="dot"></span>
                         <span class="dot"></span>
                     </li>
@@ -138,8 +154,17 @@
                         <span class="dot"></span>
                     </li>
                     <li class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="skill">
                         <span class="skill-name">R</span>
                         <span class="dot"></span>
+                        <span class="dot"></span>
+                    </li>
+                    <li class="skill">
+                        <span class="skill-name">AngularJS</span>
                         <span class="dot"></span>
                     </li>
                 </ul>
@@ -156,16 +181,16 @@
             <div class="project-details">
                 <ul>
                     <li>
-                        Simulated a six stage, eight register pipeline processor with an instruction and data cache that runs 
-                        32-bit assembly instructions based on the ARMv8 assembly language. 
+                        Simulated a six stage, eight register pipeline processor with an instruction and data cache that runs
+                        32-bit assembly instructions based on the ARMv8 assembly language.
                     <li>
-                        Used data forwarding to resolve data hazards and speculate and squash to resolve control hazards, using 
+                        Used data forwarding to resolve data hazards and speculate and squash to resolve control hazards, using
                         methods such as predicting always taken, always not taken, forward not taken and backwards taken,
                         a one bit global predictor, and a two bit global predictor. Returns the optimal branch prediction method that
                         minimizes the number of cycles per instruction of the program.
                     </li>
                     <li>
-                        Given a cache size, determined the optimal block size, number of blocks per set, and set-asssociativity 
+                        Given a cache size, determined the optimal block size, number of blocks per set, and set-asssociativity
                         for both the instruction cache and data cache to maximize their respective hit rates during the lifetime
                         of the program.
                     </li>
@@ -327,9 +352,10 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        function toggleMenu() {
-            document.getElementById("topnav").classList.toggle("show");
+    <script type="text/javascript" src="menu.js"></script>
+        <script type="text/javascript">
+            function toggleMenu() {
+                document.getElementById("topnav").classList.toggle("show");
         }
     </script>
 </body>
