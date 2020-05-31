@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="queries.css">
 </head>
 <body>
-    <nav role="navigation" class="menu">
-        <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;"></img>
+    <nav class="menu">
+        <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;">
         <ul id="topnav" class="topnav">
             <li><a href="#about" id="aboutMenu">About</a></li>
             <li><a href="#education" id="edMenu">Education</a></li>
@@ -40,17 +40,17 @@
             <hr class="header-line" style="width:110px;" />
             <div class="about" style="text-align:center;">
                 <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
-                    <span style="padding-left:2em;" />Currently a rising junior at the University of Michigan, pursuing a bachelor's degree
+                    <span style="padding-left:2em;"></span>Currently a rising junior at the University of Michigan, pursuing a bachelor's degree
                     in Computer Science with a focus on computer security. I'm passionate about the arts and enjoy music,
-                    movies, video games, and reading. <a class="link" href=https://opensource.glassanimals.com />Glass Animals</a> is one of my favorite bands,
-                    I love <a class="link" href="https://www.imdb.com/title/tt0081505/>">The Shining</a> and horror
+                    movies, video games, and reading. <a class="link" href=https://opensource.glassanimals.com >Glass Animals</a> is one of my favorite bands,
+                    I love <a class="link" href="https://www.imdb.com/title/tt0081505">The Shining</a> and horror
                     in general, I've spent a lot of time playing <a class="link" href="https://en.wikipedia.org/wiki/Dark_Souls_III">Dark Souls III</a>
                     and <a class="link" href="https://en.wikipedia.org/wiki/Pok%C3%A9mon_Emerald">Pokemon Emerald</a>,
                     and <a class="link" href="https://www.goodreads.com/book/show/33.The_Lord_of_the_Rings">The Lord of the Rings</a> is my
                     all-time favorite book series. Feel free to ask me about anything art related if you want an interesting
                     conversation!
                 </p>
-                <img src="images/headshot_circle.png" style="height:120px;display:inline-block;" />
+                <img src="images/headshot_circle.png" alt="Profile Picture" style="height:120px;display:inline-block;" />
             </div>
         </div>
         <h1 class="page-header" id="education">Education</h1>
@@ -327,7 +327,7 @@
                     <h1 style="font-size:40px;margin:0;padding:0;">Justin Time Hutchins</h1>
                 </a>
             </div>
-            <a href="Justin Hutchins Resume.pdf" id="download-link" download target="_blank">Download Resume</a>
+            <a href="Justin_Hutchins_Resume.pdf" id="download-link" download target="_blank">Download Resume</a>
             <div class="links">
                 <a href="https://github.com/jushutch" target="_blank">
                     <img class="logo" alt="Find me on Github" src="images/GitHub-Mark-Light-120px-plus.png" />
@@ -347,7 +347,7 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
+    <script>
         function toggleMenu() {
             document.getElementById("topnav").classList.toggle("show");
         }
