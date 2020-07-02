@@ -20,7 +20,7 @@ body {
   width: 130px;
   text-align:center;
   position: fixed;
-  right: 20px;
+  left: 20px;
   top: 0%;
   margin: 0;
   padding: 0;
@@ -80,7 +80,7 @@ body {
 }
 
 .home-header {
-  background-image: url("images/img1.jpg");
+  background-image: url("images/header2.jpeg");
   position: fixed;
   margin: 0;
   padding: 0;
