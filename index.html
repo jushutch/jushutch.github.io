@@ -11,10 +11,16 @@
     <meta name="image" property="og:image" content="images/site_thumbnail.png">
     <meta property="og:description" content="A web version of my resume that I built as an exercise in HTML and CSS. Hosted with Github Pages, allowing for version control."/>
     <meta property="og:url" content="https://jushutch.github.io/">
+    <link rel="stylesheet" href="particles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="queries.css">
+
+<!--    <link rel="stylesheet" href="waves.css">-->
+<!--    <link rel="stylesheet" href="gradient.css">-->
+
 </head>
 <body>
     <nav class="menu">
@@ -28,12 +34,21 @@
             <li><a href="#extra" id="extraMenu">Extracurricular</a></li>
         </ul>
     </nav>
-    <div id="home-header" class="home-header">
-        <div class="quote site-title">
-            <p style="font-size:20px;margin:0;padding-bottom:0;">The professional site of</p>
-            <h1 style="font-size:50px;margin:0;padding:0;">Justin Time Hutchins</h1>
-        </div>
-    </div>
+
+<!--    <div id="home-header" class="home-header">-->
+        <div id="particles-js"></div>
+
+    <script>
+        particlesJS.load('particles-js', 'particles.json',
+            function() {
+                console.log('Particles loaded');
+        });
+    </script>
+<!--        <div class="quote site-title">-->
+<!--            <p style="font-size:2em;margin:0;padding-bottom:0;">The professional site of</p>-->
+<!--            <h1 style="font-size:6em;margin:0;padding:0;">Justin Time Hutchins</h1>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="home-page">
         <div class="bar" style="padding-bottom:30px;">
             <h1 class="page-header" id="about">About</h1>
