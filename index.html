@@ -12,6 +12,7 @@
     <meta property="og:description" content="A web version of my resume that I built as an exercise in HTML and CSS. Hosted with Github Pages, allowing for version control."/>
     <meta property="og:url" content="https://jushutch.github.io/">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="queries.css">
@@ -28,13 +29,14 @@
             <li><a href="#extra" id="extraMenu">Extracurricular</a></li>
         </ul>
     </nav>
-    <div class="home-header" style="">
+    <div class="home-header fade-in" onload="fadeIn()">
         <div class="quote site-title">
             <p>The professional site of</p>
             <h1>Justin Time Hutchins</h1>
         </div>
         <img id="header-image" src="images/header2.jpeg">
     </div>
+    <script src="dynamic.js"></script>
     <div class="home-page">
         <div class="bar" style="padding-bottom:30px;">
             <h1 class="page-header" id="about">About</h1>
