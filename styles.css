@@ -78,15 +78,27 @@ body {
 }
 
 .home-header {
-  background-image: url("images/header2.jpeg");
+  //background-image: url("images/header2.jpeg");
   position: fixed;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: cover;*/
+}
+
+#header-image {
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    max-height: 100vh;
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index: -1;
+    object-fit: cover;
 }
 
 .home-header > .quote {
@@ -95,6 +107,17 @@ body {
   width: fit-content;
 }
 
+.quote h1 {
+    font-size:6em;
+    margin: 0;
+    padding: 0;
+}
+
+.quote p {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
 
 .bar {
   background-color: #16467e;

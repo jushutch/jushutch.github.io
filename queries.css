@@ -12,6 +12,10 @@
         position: absolute;
     }
 
+    .quote {
+        font-size: 50%;
+    }
+
     .home-header {
         position: absolute;
         top: 0;
