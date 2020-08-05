@@ -88,6 +88,14 @@ body {
   width: 100%;
 }
 
+.fade-in {
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    animation: fadein 3s;
+}
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -117,6 +125,34 @@ body {
     to   { opacity: 1; }
 }
 
+#arrow-wrapper {
+    margin:0;
+    padding:0;
+    width:fit-content;
+    position: absolute;
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+}
+
+#pointing-arrow {
+    opacity: .65;
+    text-decoration: none;
+    width:fit-content;
+    padding:0;
+    margin:0;
+    font-size:10em;
+    color: white;
+    cursor: pointer;
+    display: block;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(-10px);}
+    to { transform: translateY(10px);}
+}
+
 #header-image {
     top: 0;
     left: 0;
@@ -130,11 +166,6 @@ body {
 }
 
 .home-header > .quote {
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 4s; /* Firefox < 16 */
-    -ms-animation: fadein 4s; /* Internet Explorer */
-    -o-animation: fadein 4s; /* Opera < 12.1 */
-    animation: fadein 3s;
   padding: 40px;
   width: fit-content;
 }

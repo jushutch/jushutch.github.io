@@ -12,6 +12,10 @@
         position: absolute;
     }
 
+    #pointing-arrow {
+        font-size: 5em;
+    }
+
     .quote {
         font-size: 50%;
     }
