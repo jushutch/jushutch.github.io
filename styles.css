@@ -7,6 +7,9 @@ html {
 
 body {
     background-color: #1b5598;
+    overscroll-behavior: none;
+    overflow: hidden;
+    overflow-y: auto;
     //#236dc6;
     height: 100%;
     width: 100%;
