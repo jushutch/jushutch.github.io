@@ -353,7 +353,12 @@ body {
 
 /* Animations */
 .fade-in {
-    animation: fadein 3s;
+    animation: fadein 3.5s;
+}
+
+.expand-from-center {
+    animation: expand-from-center 2s ease;
+    transform: scaleX(1);
 }
 
 @keyframes fadein {
@@ -364,6 +369,10 @@ body {
 @keyframes bounce {
     from { transform: translateY(-10px);}
     to { transform: translateY(10px);}
+}
+
+@keyframes expand-from-center {
+    from { transform: scaleX(0); }
 }
 
 /* Scrollbar */
@@ -383,13 +392,19 @@ body {
 ::-webkit-scrollbar-thumb
 {
     background-color: #FFCB05;
-    background-image: -webkit-linear-gradient(45deg,
-    rgba(255, 255, 255, .4) 25%,
-    transparent 25%,
-    transparent 50%,
-    rgba(255, 255, 255, .4) 50%,
-    rgba(255, 255, 255, .4) 75%,
-    transparent 75%,
-    transparent);
+    background-image: repeating-linear-gradient(45deg,
+        rgba(255, 203, 5, 0.5),
+        rgba(255, 203, 5, 0.5) 25%,
+        rgba(255, 234, 151, 0.5) 25%,
+        rgba(255, 234, 151, 0.5) 50%);
     border-radius: 10px;
+    animation: fade-in .5s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: repeating-linear-gradient(45deg,
+        rgba(255, 234, 151, 0.5),
+        rgba(255, 234, 151, 0.5) 25%,
+        rgba(255, 203, 5, 0.5) 25%,
+        rgba(255, 203, 5, 0.5) 50%);
 }
