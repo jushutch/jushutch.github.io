@@ -305,6 +305,11 @@ body {
     color: black;
 }
 
+#footer-title {
+    font-size: 50%;
+    color:white;
+}
+
 .links {
     position: absolute;
     width: fit-content;
@@ -359,4 +364,32 @@ body {
 @keyframes bounce {
     from { transform: translateY(-10px);}
     to { transform: translateY(10px);}
+}
+
+/* Scrollbar */
+::-webkit-scrollbar-track
+{
+    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #16467e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #1b5598;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: #FFCB05;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .4) 50%,
+    rgba(255, 255, 255, .4) 75%,
+    transparent 75%,
+    transparent);
+    border-radius: 10px;
 }
