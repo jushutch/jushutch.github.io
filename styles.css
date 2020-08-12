@@ -358,7 +358,7 @@ body {
 }
 
 .expand-from-center {
-    opacity: 1;
+    opacity: 1 !important;
     animation: expand-from-center 2s ease forwards;
 }
 
