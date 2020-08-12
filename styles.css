@@ -185,6 +185,7 @@ body {
     background-color: #FFCB05;
     border: none;
     height: 2px;
+    opacity: 0;
 }
 
 .profile-picture {
