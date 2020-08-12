@@ -357,8 +357,8 @@ body {
 }
 
 .expand-from-center {
-    animation: expand-from-center 2s ease;
-    transform: scaleX(1);
+    transform: scaleX(0);
+    animation: expand-from-center 2s ease forwards;
 }
 
 @keyframes fadein {
@@ -372,7 +372,10 @@ body {
 }
 
 @keyframes expand-from-center {
-    from { transform: scaleX(0); }
+    from { transform: scaleX(0);
+            opacity: 0; }
+    to { transform: scaleX(1);
+           opacity: 1; }
 }
 
 /* Scrollbar */
