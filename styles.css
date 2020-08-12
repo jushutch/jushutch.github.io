@@ -185,7 +185,6 @@ body {
     background-color: #FFCB05;
     border: none;
     height: 2px;
-    opacity: 0;
 }
 
 .profile-picture {
@@ -358,7 +357,7 @@ body {
 }
 
 .expand-from-center {
-    transform: scaleX(0);
+    opacity: 1;
     animation: expand-from-center 2s ease forwards;
 }
 
@@ -373,10 +372,8 @@ body {
 }
 
 @keyframes expand-from-center {
-    from { transform: scaleX(0);
-            opacity: 0; }
-    to { transform: scaleX(1);
-           opacity: 1; }
+    from { transform: scaleX(0);}
+    to { transform: scaleX(1);}
 }
 
 /* Scrollbar */
