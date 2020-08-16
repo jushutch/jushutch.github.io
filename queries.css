@@ -16,7 +16,7 @@
         font-size: 5em;
     }
 
-    .quote {
+    .site-title {
         font-size: 50%;
     }
 
@@ -30,17 +30,25 @@
 
     #footer-title {
         top:35%;
+        font-size:40%;
+        padding-left: 0;
+        padding-top: 30px;
+        padding-right: 0;
     }
 
     .links {
         left:50%;
         margin: 0;
         transform: translate(-50%);
-        bottom: 30px;
+        bottom: 50px;
     }
 
     .footer-menu {
         display: none;
+    }
+
+    #download-link {
+        bottom:40px;
     }
 }
 

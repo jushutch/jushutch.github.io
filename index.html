@@ -12,14 +12,13 @@
     <meta property="og:description" content="A web version of my resume that I built as an exercise in HTML and CSS. Hosted with Github Pages, allowing for version control."/>
     <meta property="og:url" content="https://jushutch.github.io/">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/045d972e15.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Roboto:wght@300;400&family=Source+Serif+Pro:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="dynamic.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/logo.png" />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="queries.css">
 </head>
 <body>
+    <!-- Top Menu  -->
     <nav class="menu">
         <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;">
         <ul id="topnav" class="topnav">
@@ -31,8 +30,10 @@
             <li><a href="#extra" id="extraMenu">Extracurricular</a></li>
         </ul>
     </nav>
-    <div class="home-header">
-        <div class="quote site-title fade-in">
+
+    <!-- Page Header  -->
+    <div class="home-header" id="top">
+        <div class="site-title fade-in">
             <p>The professional site of</p>
             <h1>Justin Time Hutchins</h1>
         </div>
@@ -43,6 +44,8 @@
     </div>
     <script src="dynamic.js"></script>
     <div class="home-page">
+
+        <!-- About  -->
         <div class="bar" style="padding-bottom:30px;">
             <h1 class="page-header" id="about">About</h1>
             <hr class="header-line" style="width:110px;" />
@@ -56,6 +59,8 @@
                 <img src="images/headshot.png" alt="Profile Picture" class="profile-picture"/>
             </div>
         </div>
+
+        <!-- Education  -->
         <h1 class="page-header" id="education">Education</h1>
         <hr class="header-line" style="width:210px;" />
         <div style="text-align:center;">
@@ -84,6 +89,8 @@
                 <li>Physics II: Electricity and Magnetism</li>
             </ul>
         </div>
+
+        <!-- Skills  -->
         <div class="bar" style="height:auto;">
             <h1 class="page-header" id="skills">Skills</h1>
             <hr class="header-line" style="width:160px;" />
@@ -162,6 +169,8 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Projects  -->
         <h1 class="page-header" id="projects">Projects</h1>
         <hr class="header-line" style="width:200px;" />
         <div class="project">
@@ -169,6 +178,9 @@
                 <h3 style="margin:0;">Library System</h3>
                 <p style="margin:0;">June 2020</p>
                 <p style="margin:0;">Independent</p>
+                <a class="link" href="https://github.com/jushutch/Online-Library" target="_blank">
+                    View on GitHub
+                </a>
             </div>
             <div class="project-details">
                 <ul>
@@ -257,6 +269,8 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Work Experience  -->
         <div class="bar" style="height:auto;">
             <h1 class="page-header" id="work">Work<br />Experience</h1>
             <hr class="header-line" style="width:300px;" />
@@ -265,6 +279,9 @@
                     <h3 style="margin:0;">Software Engineer Intern</h3>
                     <p style="margin:0;">Learning A-Z</p>
                     <p style="margin:0;">May 2020 - August 2020</p>
+                    <a class="link" href="https://github.com/jushutch/LAZ-Book-Search" target="_blank">
+                        View on GitHub
+                    </a>
                 </div>
                 <div class="project-details">
                     <ul>
@@ -283,7 +300,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
             <div class="project">
                 <div class="project-title">
@@ -328,6 +344,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- Extracurricular  -->
         <h1 class="page-header" id="extra">Extracurricular</h1>
         <hr class="header-line" style="width:300px;" />
         <div class="project">
@@ -368,6 +386,8 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Footer  -->
         <div class="bar" style="height: 200px;z-index:10;">
             <div class="footer-menu">
                 <ul style="list-style-type:none;margin:0;">
@@ -379,10 +399,10 @@
                     <li><a href="#extra">Extracurricular</a></li>
                 </ul>
             </div>
-            <div class="site-title" id="footer-title" style="color:white;">
+            <div class="site-title" id="footer-title">
                 <a href="#top" style="text-decoration:none;color:white;">
-                    <p style="font-size:16px;margin:0;padding-bottom:0;">The Professional Site of</p>
-                    <h1 style="font-size:40px;margin:0;padding:0;">Justin Time Hutchins</h1>
+                    <p>The professional site of</p>
+                    <h1>Justin Time Hutchins</h1>
                 </a>
             </div>
             <a href="Justin_Hutchins_Resume.pdf" id="download-link" download target="_blank">Download Resume</a>
