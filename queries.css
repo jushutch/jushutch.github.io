@@ -20,6 +20,10 @@
         font-size: 50%;
     }
 
+    .site-title a {
+        font-size: 16px;
+    }
+
     .coursework {
         margin-top: 0px;
     }
