@@ -16,7 +16,7 @@
         font-size: 5em;
     }
 
-    .site-title {
+    .site-title:not(a) {
         font-size: 50%;
     }
 

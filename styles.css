@@ -18,6 +18,10 @@ body {
     padding: 0;
 }
 
+a {
+    text-decoration:none;
+}
+
 /* Top navigation menu */
 .menu {
   width: 130px;
@@ -331,10 +335,6 @@ img:not(.logo):hover {
     margin: 0;
     padding: 0;
     text-decoration: none;
-}
-
-a {
-    text-decoration:none;
 }
 
 .logo {
