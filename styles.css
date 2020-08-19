@@ -24,19 +24,37 @@ a {
 
 /* Top navigation menu */
 .menu {
-  width: 130px;
-  text-align:center;
-  position: fixed;
-  left: 20px;
-  top: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 2;
+    width: fit-content;
+    text-align:center;
+    position: fixed;
+    left:50%;
+    transform: translateX(-50%);
+    top: 0;
+    padding: 0;
+    z-index: 2;
+}
+
+#menu-pull {
+    width:fit-content;
+    cursor: pointer;
+    top:0;
+    padding-top:15px;
+    padding-bottom: 15px;
+    border-radius: 0 0 15px 15px;
+}
+
+#menu-pull a {
+    margin:0 auto;
+    padding:0;
+    transition: .5s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
 }
 
 .topnav {
-    display: none;
-    border-radius: 5px;
+    //display: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -45,32 +63,47 @@ a {
 
 .topnav li {
   margin: 0;
-  padding: 0;
+    background-color: #16467e;
+    padding: 7px 16px;
+    text-align: center;
+    float:left;
+    position: relative;
+    top:-50px;
+    transition: .5s linear;
+}
+
+.topnav li:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.topnav li:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.topnav li:not(:last-child) {
+    border-right:black 10px;
 }
 
 .topnav li a {
-  background-color: #16467e;
-  text-align: center;
-  color: white;
-  display: block;
-  padding: 14px 16px;
+    display:inline-block;
   text-decoration: none;
-  transition-duration: 0.5s;
+    color:white;
 }
 
-.menu .topnav.show {
-    display: block;
+.show {
+    //display: block;
+    top:0 !important;
 }
 
-.topnav li a:hover:not(.active) {
+.topnav li:hover:not(.active) {
     background-color: #1b5598;
 }
 
-.topnav li a.active:hover {
+.topnav li.active:hover {
   background-color: #ffea97;
 }
 
-.topnav li a.active {background-color: #FFCB05; color: black;}
+.topnav li.active {background-color: #FFCB05; color: black;}
 
 
 /* Page Header */
@@ -181,6 +214,13 @@ a {
     color: #FFCB05;
     padding-top: 20px;
     margin: 0;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -15vh;
+    visibility: hidden;
 }
 
 .home-page .header-line {

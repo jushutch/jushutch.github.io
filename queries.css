@@ -12,6 +12,10 @@
         position: absolute;
     }
 
+    .anchor {
+        top: 0;
+    }
+
     #pointing-arrow {
         font-size: 5em;
     }

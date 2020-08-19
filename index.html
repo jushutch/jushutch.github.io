@@ -21,13 +21,16 @@
 <body>
     <!-- Top Menu  -->
     <nav class="menu">
-        <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;">
-        <ul id="topnav" class="topnav">
+<!--        <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png" style="height:30px;width:40px;cursor:pointer;padding:30px;">-->
+        <ul class="topnav" id="topnav">
             <li><a href="#about" id="aboutMenu">About</a></li>
             <li><a href="#education" id="edMenu">Education</a></li>
-            <li><a href="#skills" id="skillMenu">Skills</a></li>
+            <li><a href="#work" id="workMenu">Experience</a></li>
+            <li id="menu-pull" onClick="toggleMenu()">
+                <a onClick="toggleMenu()">&#xFE40</a>
+            </li>
             <li><a href="#projects" id="projMenu">Projects</a></li>
-            <li><a href="#work" id="workMenu">Work Experience</a></li>
+            <li><a href="#skills" id="skillMenu">Skills</a></li>
             <li><a href="#extra" id="extraMenu">Extracurricular</a></li>
         </ul>
     </nav>
@@ -61,7 +64,8 @@
 
         <!-- About  -->
         <div class="bar" style="padding-bottom:30px;">
-            <h1 class="page-header" id="about">About</h1>
+            <a class="anchor" id="about"></a>
+            <h1 class="page-header">About</h1>
             <hr class="header-line" style="width:110px;" />
             <div class="about" style="text-align:center;">
                 <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
@@ -75,7 +79,8 @@
         </div>
 
         <!-- Education  -->
-        <h1 class="page-header" id="education">Education</h1>
+        <a class="anchor" id="education"></a>
+        <h1 class="page-header">Education</h1>
         <hr class="header-line" style="width:210px;" />
         <div style="text-align:center;">
             <div style="display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;">
@@ -106,7 +111,8 @@
 
         <!-- Work Experience  -->
         <div class="bar" style="height:auto;">
-            <h1 class="page-header" id="work">Work<br />Experience</h1>
+            <a class="anchor" id="work"></a>
+            <h1 class="page-header">Experience</h1>
             <hr class="header-line" style="width:300px;" />
             <div class="project">
                 <div class="project-title">
@@ -193,7 +199,8 @@
         </div>
 
         <!-- Projects  -->
-        <h1 class="page-header" id="projects">Projects</h1>
+        <a class="anchor" id="projects"></a>
+        <h1 class="page-header">Projects</h1>
         <hr class="header-line" style="width:200px;" />
         <div class="project">
             <div class="project-title">
@@ -294,8 +301,8 @@
 
         <!-- Skills  -->
         <div class="bar" style="height:auto;">
-
-            <h1 class="page-header" id="skills">Skills</h1>
+            <a class="anchor" id="skills"></a>
+            <h1 class="page-header">Skills</h1>
             <hr class="header-line" style="width:160px;" />
             <div class="skill-container">
                 <ul style="margin-bottom:50px;list-style-type:none;padding-left:0;">
@@ -374,7 +381,8 @@
         </div>
 
         <!-- Extracurricular  -->
-        <h1 class="page-header" id="extra">Extracurricular</h1>
+        <a class="anchor" id="extra"></a>
+        <h1 class="page-header">Extracurricular</h1>
         <hr class="header-line" style="width:300px;" />
         <div class="project">
             <div class="project-title">
@@ -454,7 +462,10 @@
     </div>
     <script>
         function toggleMenu() {
-            document.getElementById("topnav").classList.toggle("show");
+            //document.getElementById("topnav").classList.toggle("show");
+            $(".topnav li").toggleClass("show");
+            $("#menu-pull a").toggleClass("rotate");
+            $("#menu-pull").toggleClass("active");
         }
     </script>
 </body>

@@ -18,12 +18,20 @@ $(document).ready(function() {
         if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
-            $('html, body').animate({
+            var page = $('html, body');
+            page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+                page.stop();
+            });
+
+            page.animate({
                 scrollTop: $(hash).offset().top
             }, 600, function() {
+                page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
                 window.location.hash = hash;
             });
         }
+
+        return false;
     });
 
     $(".header-line").inViewport(function(px) {
