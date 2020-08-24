@@ -51,6 +51,7 @@ a {
 
 .rotate {
     transform: rotate(180deg);
+    color: #16467e !important;
 }
 
 .topnav {
@@ -393,16 +394,11 @@ img:not(.logo):hover {
     left: 50%;
     transform: translate(-50%);
     bottom: 10px;
-    text-decoration: none;
     color: white;
     font-size: 15px;
     text-align: center;
     width: fit-content;
     margin: 0;
-}
-
-#download-link:hover {
-    color: black;
 }
 
 /* Animations */
