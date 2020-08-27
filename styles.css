@@ -22,7 +22,22 @@ a {
     text-decoration:none;
 }
 
+img:not(.logo):not(#menu-button) {
+    transition: .5s ease;
+    image-rendering: crisp-edges;
+}
+
+img:not(.logo):not(#menu-button):hover {
+    transform:scale(1.1, 1.1);
+}
+
 /* Top navigation menu */
+#menu-button {
+    height:30px;
+    width:40px;
+    cursor:pointer;
+    margin:30px;
+}
 .menu {
   width: 130px;
   text-align:center;
@@ -74,7 +89,6 @@ a {
 
 
 /* Page Header */
-
 #header-image {
     background: linear-gradient(
             rgba(0, 0, 0, 0),
@@ -133,7 +147,6 @@ a {
 }
 
 /* Bouncing Arrow */
-
 #arrow-wrapper {
     margin:0;
     padding:0;
@@ -201,15 +214,6 @@ a {
 
 .profile-picture:hover {
     transform: scale(1.1, 1.1);
-}
-
-img:not(.logo) {
-    transition: .5s ease;
-    image-rendering: crisp-edges;
-}
-
-img:not(.logo):hover {
-    transform:scale(1.1, 1.1);
 }
 
 .education {
@@ -348,21 +352,16 @@ img:not(.logo):hover {
     filter:invert(100%);
 }
 
-#download-link {
+#tag {
     position: absolute;
     left: 50%;
     transform: translate(-50%);
     bottom: 10px;
-    text-decoration: none;
     color: white;
     font-size: 15px;
     text-align: center;
     width: fit-content;
     margin: 0;
-}
-
-#download-link:hover {
-    color: black;
 }
 
 /* Animations */
