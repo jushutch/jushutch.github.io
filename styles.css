@@ -246,7 +246,7 @@ img:not(.logo):not(#menu-button):hover {
 }
 
 .skill:hover {
-    background-color: #1b5598;
+    background-color: #16467e;
     transform: translateX(-10px);
 }
 
