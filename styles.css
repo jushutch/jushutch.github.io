@@ -153,13 +153,14 @@ img:not(.logo):not(#menu-button):hover {
     width:fit-content;
     position: absolute;
     left:50%;
-    bottom:0;
+    bottom:50px;
     transform: translateX(-50%);
 }
 
 #pointing-arrow {
     opacity: .65;
     text-decoration: none;
+    line-height: 0;
     width:fit-content;
     padding:0;
     margin:0;
@@ -168,6 +169,11 @@ img:not(.logo):not(#menu-button):hover {
     cursor: pointer;
     display: block;
     animation: bounce 1s infinite alternate;
+    transition: .5s ease;
+}
+
+#pointing-arrow:hover {
+    opacity:1;
 }
 
 /* Content */
@@ -287,6 +293,11 @@ img:not(.logo):not(#menu-button):hover {
     max-width: 500px;
     text-align:left;
     display:inline-block;
+}
+
+.emphasis {
+    color: #FFCB05;
+    font-weight: bold;
 }
 
 .link {
