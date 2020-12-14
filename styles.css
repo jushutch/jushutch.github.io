@@ -298,6 +298,10 @@ img:not(.logo):not(#menu-button):hover {
     display:inline-block;
 }
 
+.project .project-title a img {
+    padding-top: 5px;
+}
+
 .project .project-details {
     margin-right: 20px;
     max-width: 500px;
