@@ -28,41 +28,7 @@
     <link rel="stylesheet" href="static/css/queries.css">
 </head>
 <body>
-    
-<nav class="menu">
-    <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="static/images/menu_icon.png">
-    <ul id="topnav" class="topnav">
-        <li><a href="#about" id="aboutMenu">About</a></li>
-        <li><a href="#education" id="edMenu">Education</a></li>
-        <li><a href="#work" id="workMenu">Experience</a></li>
-        <li><a href="#projects" id="projMenu">Projects</a></li>
-        <li><a href="#extra" id="extraMenu">Extracurricular</a></li>
-        <li><a href="#skills" id="skillMenu">Skills</a></li>
-    </ul>
-</nav>
-    
-<!-- Page Header  -->
-<div class="home-header" id="top">
-    <div class="site-title fade-in">
-        <p style="cursor:default;">The professional site of</p>
-        <h1 style="cursor:default;">Justin Time Hutchins</h1>
-        <div>
-            <a href="https://github.com/jushutch" target="_blank">
-                <img class="logo" alt="Find me on Github" src="static/images/GitHub-Mark-Light-120px-plus.png" />
-            </a>
-            <a href="mailto:jushutch@umich.edu" target="_blank">
-                <img class="logo" alt="Email me" src="static/images/gmail_logo.png" />
-            </a>
-            <a href="https://www.linkedin.com/in/jushutch/" target="_blank">
-                <img class="logo" alt="Find me on LinkedIn" src="static/images/LI-In-Bug-White.png" />
-            </a>
-        </div>
-        <a href="static/files/Justin_Hutchins_Resume.pdf" class="link" id="header-resume-link" target="_blank">Resume</a>
-    </div>
-    <span id="arrow-wrapper" class="fade-in">
-            <a href="#about" id="pointing-arrow">&#xFE40</a>
-        </span>
-    <div id="header-image"></div>
-</div>
+    {% include "menu.html" %}
+    {% include "header.html" %}
 </body>
 </html>

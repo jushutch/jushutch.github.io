@@ -1,0 +1,88 @@
+[
+    {
+        "url": "/",
+        "template": "index.html",
+        "context": {
+            "about": {
+                "text": "A Senior at the University of &#77ichigan, pursuing a B.S. in Computer Science with a focus on Software Engineering. My primary experiences are in LAMP-stack web development and cloud engineering in a microservice architecture. I'm interested in gaining more experience with software development infrastructure and testing, with an emphasis on acquiring new skills and gaining a better understanding of the software development process. Clean code, documentation, security, and quality assurance are all extremely important to me when developing software, and I pride myself on my strong communication skills, passion for learning, and willingness to try new things.",
+                "img": ""
+            },
+            "education": {
+                "GPA": 3.5,
+                "courses": [
+                    "Software Engineering",
+                    "Computer Science Pragmatics",
+                    "Foundations of Computer Science",
+                    "Introduction to Computer Security",
+                    "Data Structures and Algorithms",
+                    "Programming and Data Structures",
+                    "Elementary Programming Concepts",
+                    "Introduction to Computer Organization",
+                    "Discrete Mathematics",
+                    "Introduction to Statistics and Data Analysis",
+                    "Honors Calculus I",
+                    "Honors Calculus II",
+                    "Multivariable and Vector Calculus",
+                    "Honors Physics I: Kinematics",
+                    "Physics II: Electricity and Magnetism"
+                ],
+                "img": "static/images/block-m-maize.png"
+            },
+            "experience": [
+                {
+                    "title": "Software Engineer Intern",
+                    "company": "CrowdStrike",
+                    "dates": "May 2021 - August 2021",
+                    "img": "static/images/crowdstrike-logo.png",
+                    "link": "https://www.crowdstrike.com/",
+                    "bullets": [
+                        "Migrated cloud microservices written in Go to modules using Jenkins CI pipelines and Spinnaker for CD to a multi-cloud environment. Documented migration workflow and presented work and findings to the Cloud engineering team.",
+                        "Independently developed a tool using bash and python to create directed graphs of Go package dependencies. The tool was adopted by the Cloud Developer Experience team to help visualize and  plan the module migration project.",
+                        "Worked as an SDET and improved the quality of existing features by writing integration tests to validate public microservice API endpoints using the pytest framework."
+                    ]
+                }
+            ],
+            "projects": [
+                {
+                    "name": "Flutter",
+                    "date": "April 2021",
+                    "links": [
+                        {
+                            "text": "Writeup of Experience",
+                            "link": "static/files/Flutter.pdf"
+                        },
+                        {
+                            "text": "View on GitHub",
+                            "link": "https://github.com/flutter/flutter/pulls?q=is%3Aclosed+is%3Apr+author%3Ajushutch"
+                        }
+                    ],
+                    "bullets": [
+                        "Contributed to the open source Flutter project on GitHub by claiming open issues, implementing effective solutions, and landing pull requests to merge changes. Successfully resolved 3 issues related to the Flutter framework with pull requests.",
+                        "Conducted extensive quality assurance on proposed changes using mutation testing, regression testing, CI testing, code reviews, and static analysis. Wrote required unit tests for changes which achieved 100% line coverage.",
+                        "Communicated with Google developers to elicit requirements, clarify quality assurance standards, and conduct code reviews, while also engaging in the Flutter contributor community to discuss issues and provide support."
+                    ]
+                }
+            ],
+            "extracurricular": [
+                {
+                    "title": "Security Team Lead",
+                    "company": "Michigan Hackers",
+                    "dates": "April 2020 - Current",
+                    "img": "static/images/michigan-hackers.ico",
+                    "link": "https://michiganhackers.org",
+                    "alt": "Michigan Hackers Website",
+                    "bullets": [
+                        "Prepared for and competed in multiple Capture the Flag competitions including the University of Texas CTF where our team of 4 placed in the 77th percentile out of 697 teams.",
+                        "Developed weekly practice challenges and presented solutions in live demonstrations to teach new members about web security, app security, forensics, reverse engineering, and cryptography."
+                    ]
+                }
+            ],
+            "skills": [
+                {
+                    "name": "C++",
+                    "stars": 5
+                }
+            ]
+        }
+    }
+]

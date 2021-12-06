@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center m-0">
+        <div class="col-10">
+            <div class="card">
+                <div class="card-body">
+                    <div class="row m-0">
+                        <img class="col rounded" alt="{{ postid }}" src="{{ img_url }}">
+                        <div class="col">
+                            <div>
+                                <img alt="{{ owner }} PFP" height="30" class="rounded" src="{{ owner_img_url }}">
+                                <a href="/u/{{ owner }}/" class="username">{{ owner }}</a>
+                                <a href="/p/{{ postid }}/" class="float-end">{{ timestamp }}</a>
+                            </div>
+                            <br>
+                            <div>
+                                {{ likes }} {{ 'like' if likes == 1 else 'likes'}} <br>
+                                {% for comment in comments %}
+                                <a class="username" href="/u/{{ comment.owner }}/">{{ comment.owner }}</a> {{ comment.text }} <br>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

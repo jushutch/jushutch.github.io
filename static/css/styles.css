@@ -95,7 +95,7 @@ img:not(.logo):not(#menu-button):hover {
             rgba(22, 70, 126, 0.6),
             rgba(0, 0, 0, 0)
     ),
-    url(./images/header2.jpeg);
+    url(../images/header2.jpeg);
     background-size: cover;
     top: 0;
     left: 0;
@@ -276,7 +276,6 @@ img:not(.logo):not(#menu-button):hover {
     vertical-align: middle;
     background-color: #FFCB05;
     border-radius: 50%;
-    display: inline-block;
 }
 
 .project {
@@ -369,10 +368,9 @@ img:not(.logo):not(#menu-button):hover {
 }
 
 .logo {
-    //background-color: grey;
     padding: 10px;
     margin: 0;
-    height: 30px;
+    height: 60px;
 }
 
 .logo:hover {
@@ -419,7 +417,6 @@ img:not(.logo):not(#menu-button):hover {
 /* Scrollbar */
 ::-webkit-scrollbar-track
 {
-    //-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     background-color: #16467e;
     border-radius: 10px;
 }
