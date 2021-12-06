@@ -5,11 +5,14 @@
         "context": {
             "about": {
                 "text": "A Senior at the University of &#77ichigan, pursuing a B.S. in Computer Science with a focus on Software Engineering. My primary experiences are in LAMP-stack web development and cloud engineering in a microservice architecture. I'm interested in gaining more experience with software development infrastructure and testing, with an emphasis on acquiring new skills and gaining a better understanding of the software development process. Clean code, documentation, security, and quality assurance are all extremely important to me when developing software, and I pride myself on my strong communication skills, passion for learning, and willingness to try new things.",
-                "img": ""
+                "img": "static/images/headshot.png"
             },
             "education": {
                 "GPA": 3.5,
                 "courses": [
+                    "Operating Systems",
+                    "Web Systems",
+                    "Programming Languages",
                     "Software Engineering",
                     "Computer Science Pragmatics",
                     "Foundations of Computer Science",
@@ -19,12 +22,7 @@
                     "Elementary Programming Concepts",
                     "Introduction to Computer Organization",
                     "Discrete Mathematics",
-                    "Introduction to Statistics and Data Analysis",
-                    "Honors Calculus I",
-                    "Honors Calculus II",
-                    "Multivariable and Vector Calculus",
-                    "Honors Physics I: Kinematics",
-                    "Physics II: Electricity and Magnetism"
+                    "Introduction to Statistics and Data Analysis"
                 ],
                 "img": "static/images/block-m-maize.png"
             },
@@ -35,6 +33,7 @@
                     "dates": "May 2021 - August 2021",
                     "img": "static/images/crowdstrike-logo.png",
                     "link": "https://www.crowdstrike.com/",
+                    "alt": "CrowdStrike Website",
                     "bullets": [
                         "Migrated cloud microservices written in Go to modules using Jenkins CI pipelines and Spinnaker for CD to a multi-cloud environment. Documented migration workflow and presented work and findings to the Cloud engineering team.",
                         "Independently developed a tool using bash and python to create directed graphs of Go package dependencies. The tool was adopted by the Cloud Developer Experience team to help visualize and  plan the module migration project.",

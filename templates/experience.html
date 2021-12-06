@@ -1,0 +1,27 @@
+
+<!-- Experience  -->
+<div class="bar" style="height:auto;">
+    <h1 class="page-header" id="work">Experience</h1>
+    <hr class="header-line" style="width:200px;" />
+    {% for exp in experience %}
+    <div class="project">
+        <div class="project-title">
+            <h3 style="margin:0">{{exp.title}}</h3>
+            <p style="margin:0;">{{exp.company}}</p>
+            <p style="margin:0;">{{exp.dates}}</p>
+            <a href="{{exp.link}}" target="_blank">
+                <img src="{{exp.img}}" alt="{{exp.alt}}" height="40px">
+            </a>
+        </div>
+        <div class="project-details">
+            <ul>
+                {% for bullet in exp.bullets %}
+                <li>
+                    {{bullet}}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,27 @@
+
+<!-- Projects  -->
+<h1 class="page-header" id="projects">Projects</h1>
+<hr class="header-line" style="width:150px;" />
+<div class="project">
+    {% for proj in projects %}
+    <div class="project-title">
+        <h3 style="margin:0;">{{proj.name}}</h3>
+        <p style="margin:0;">{{proj.date}}</p>
+        {% for link in proj.links %}
+        <a class="link" href="{{link.link}}" target="_blank">
+            {{link.text}}
+        </a>
+        <br>
+        {% endfor %}
+    </div>
+    <div class="project-details">
+        <ul>
+            {% for bullet in proj.bullets %}
+            <li>
+                {{bullet}}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>

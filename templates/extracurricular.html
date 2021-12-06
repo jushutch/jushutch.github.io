@@ -1,0 +1,27 @@
+
+<!-- Extracurricular  -->
+<div class="bar" style="height:auto;">
+    <h1 class="page-header" id="extra">Extracurricular</h1>
+    <hr class="header-line" style="width:260px;" />
+    {% for extra in extracurricular %}
+    <div class="project">
+        <div class="project-title">
+            <h3 style="margin:0;">{{extra.company}}</h3>
+            <p style="margin:0;">{{extra.title}}</p>
+            <p style="margin:0;">{{extra.dates}}</p>
+            <a href="{{extra.link}}" target="_blank">
+                <img src="{{extra.img}}" alt="{{extra.alt}}" height="40px">
+            </a>
+        </div>
+        <div class="project-details">
+            <ul style="margin-bottom:0;">
+                {% for bullet in extra.bullets %}
+                <li>
+                    {{bullet}}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>

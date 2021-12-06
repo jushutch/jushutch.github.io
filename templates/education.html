@@ -1,0 +1,23 @@
+
+<!-- Education  -->
+<h1 class="page-header" id="education">Education</h1>
+<hr class="header-line" style="width:200px;" />
+<div style="text-align:center;">
+    <div style="vertical-align:top;display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;vert-align: top">
+        <div style="text-align:center;">
+            <img src="{{education.img}}" alt="University of Michigan logo" style="height:100px;" />
+        </div>
+        <div style="text-align:center;width:auto;">
+            <p class="education">
+                University of Michigan, Ann Arbor<br />Class of 2022, &#72onors Program<br />
+                L.S.A. &#67omputer Science B.S.<br />G.P.A.: {{education.GPA}}/4.0
+            </p>
+        </div>
+    </div>
+    <ul class="coursework">
+        <li style="font-size:20px;color:#FFCB05;">Relevant Coursework</li>
+        {% for course in education.courses %}
+            <li>{{course}}</li>
+        {% endfor %}
+    </ul>
+</div>

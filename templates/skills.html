@@ -1,0 +1,16 @@
+
+<!-- Skills -->
+<h1 class="page-header" id="skills">Skills</h1>
+<hr class="header-line" style="width:100px;" />
+<div class="skill-container">
+    <ul style="margin-bottom:50px;list-style-type:none;padding-left:0;">
+        {% for skill in skills %}
+        <li class="skill">
+            <span class="skill-name">{{skill.name}}</span>
+            {% for n in range(skill.stars) %}
+            <span class="dot"></span>
+            {% endfor %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>
