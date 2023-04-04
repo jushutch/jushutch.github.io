@@ -24,8 +24,8 @@
     <img onClick="toggleMenu()" id="menu-button" alt="Menu" src="images/menu_icon.png">
     <ul id="topnav" class="topnav">
         <li><a href="#about" id="aboutMenu">About</a></li>
-        <li><a href="#education" id="edMenu">Education</a></li>
         <li><a href="#work" id="workMenu">Experience</a></li>
+		<li><a href="#education" id="edMenu">Education</a></li>
         <li><a href="#projects" id="projMenu">Projects</a></li>
         <li><a href="#extra" id="extraMenu">Extracurricular</a></li>
         <li><a href="#skills" id="skillMenu">Skills</a></li>
@@ -63,227 +63,274 @@
     <div class="bar" style="padding-bottom:30px;">
         <h1 class="page-header" id="about">About</h1>
         <hr class="header-line" style="width:110px;" />
-        <div class="about" style="text-align:center;">
-            <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
-                <span style="padding-left:2em;"></span>A Senior at the University of &#77ichigan, pursuing a B.S. in
-                Computer Science with a focus on Software Engineering. My primary experiences are in LAMP-stack web
-                development and cloud engineering in a microservice architecture. I'm interested in gaining more
-                experience with software development infrastructure and testing, with an emphasis on acquiring new
-                skills and gaining a better understanding of the software development process. Clean code, documentation,
-                security, and quality assurance are all extremely important to me when developing software, and I pride
-                myself on my strong communication skills, passion for learning, and willingness to try new things.
+        <div class="about">
+            <p id="intro">
+                <span style="padding-left:2em;"></span>I'm a critical thinker and a creator. I enjoy solving challenging problems and building solutions from start to finish.
+				My favorite creative medium is programming, which I enjoy doing for fun and for work.
+				<br><br>
+				As a Software Engineer at CrowdStrike, I work on one of the most interesting challenges we face today: stopping
+				breaches. I build features and products that provide our customers insight and control over their environments. As a
+				cloud engineer, I develop microservices in Go that operate at scale and use technologies such as Kubernetes, Kafka, and
+				AWS. I also write scripts in Python and Bash to accelerate my daily workflows.
+				<br><br>
+				In my free time, I enjoy programming in Flutter, contributing to the open source community, learning more about
+				technology and development best-practices, and honing my technical and soft skills.
+				<br><br>
+				At this point in my career, my goals are to learn as much as possible and meet new people with unique perspectives, so
+				please contact me if you have any tips, tricks, advice, or learning opportunities I might be interested in, or if you
+				want to learn more about my experiences!
             </p>
             <img src="images/headshot.png" alt="Profile Picture" class="profile-picture"/>
         </div>
     </div>
 
-    <!-- Education  -->
-    <h1 class="page-header" id="education">Education</h1>
-    <hr class="header-line" style="width:200px;" />
-    <div style="text-align:center;">
-        <div style="vertical-align:top;display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;vert-align: top">
-            <div style="text-align:center;">
-                <img src="images/block-m-maize.png" alt="University of Michigan logo" style="height:100px;" />
-            </div>
-            <div style="text-align:center;width:auto;">
-                <p class="education">
-                    University of Michigan, Ann Arbor<br />Class of 2022, &#72onors Program<br />
-                    L.S.A. &#67omputer Science B.S.<br />G.P.A.: 3.5/4.0
-                </p>
-            </div>
-        </div>
-        <ul class="coursework">
-            <li style="font-size:20px;color:#FFCB05;">Relevant Coursework</li>
-            <li>Software Engineering</li>
-            <li>Computer Science Pragmatics</li>
-            <li>Foundations of Computer Science</li>
-            <li>Introduction to Computer Security</li>
-            <li>Data Structures and Algorithms</li>
-            <li>Programming and Data Structures</li>
-            <li>Elementary Programming Concepts</li>
-            <li>Introduction to Computer Organization</li>
-            <li>Discrete Mathematics</li>
-            <li>Introduction to Statistics and Data Analysis</li>
-            <li>Honors Calculus I</li>
-            <li>Honors Calculus II</li>
-            <li>Multivariable and Vector Calculus</li>
-            <li>Honors Physics I: Kinematics</li>
-            <li>Physics II: Electricity and Magnetism</li>
-        </ul>
-    </div>
+	<!-- Experience  -->
+	<h1 class="page-header" id="work">Experience</h1>
+	<hr class="header-line" style="width:200px;" />
+	<div class="project">
+		<div class="project-title">
+			<h3 style="margin:0">Software Engineer</h3>
+			<p style="margin:0;">CrowdStrike</p>
+			<p style="margin:0;">June 2022 - Present</p>
+			<a href="https://www.crowdstrike.com/" target="_blank">
+				<img src="images/crowdstrike-logo.png" alt="CrowdStrike Website" height="40px">
+			</a>
+		</div>
+		<div class="project-details">
+			<ul>
+				<li>
+					Developed customer facing features for CrowdStrike's Extended Detection and Response (XDR) product.
+				</li>
+				<li>
+					Implemented features in a Go microservice architecture with an emphasis on fault-tolerance, scalability, and
+					high-availability.
+				</li>
+				<li>
+					Collaborated remotely with an international team. Worked directly with senior leadership and incorporated feedback as
+					part of an iterative development cycle.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="project">
+		<div class="project-title">
+			<h3 style="margin:0">Software Engineer Intern</h3>
+			<p style="margin:0;">CrowdStrike</p>
+			<p style="margin:0;">May 2021 - August 2021</p>
+			<a href="https://www.crowdstrike.com/" target="_blank">
+				<img src="images/crowdstrike-logo.png" alt="CrowdStrike Website" height="40px">
+			</a>
+		</div>
+		<div class="project-details">
+			<ul>
+				<li>
+					Migrated cloud microservices written in Go to modules using Jenkins CI pipelines and Spinnaker
+					for CD to a multi-cloud environment. Documented migration workflow and presented work and
+					findings to the Cloud engineering team.
+				</li>
+				<li>
+					Independently developed a tool using bash and python to create directed graphs of Go package
+					dependencies.
+					The tool was adopted by the Cloud Developer Experience team to help visualize and plan the module
+					migration project.
+				</li>
+				<li>
+					Worked as an SDET and improved the quality of existing features by writing integration tests to
+					validate public microservice API endpoints using the pytest framework.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="project">
+		<div class="project-title">
+			<h3 style="margin:0">Software Engineer Associate</h3>
+			<p style="margin:0;">Learning A-Z</p>
+			<p style="margin:0;">September 2020 - April 2021</p>
+			<a href="https://www.learninga-z.com/" target="_blank">
+				<img src="images/LAZ-logo.png" alt="Learning A-Z Website" height="40px">
+			</a>
+		</div>
+		<div class="project-details">
+			<ul>
+				<li>
+					Navigated a code base of over 80,000 files to diagnose issues, locate problematic code, and
+					develop an effective solution while increasing the quality of the existing code. Created detailed
+					bug reports using FogBugz issue tracking software.
+				</li>
+				<li>
+					Followed an efficient workflow, using Git and GitLab to create branches with proposed fixes and
+					open merge requests to patch changes into the product. Successfully merged 26 branches after
+					undergoing code review by senior engineers.
+				</li>
+				<li>
+					Participated in weekly code inspections with a team of 7 engineers of varying experience to
+					refine clean code practices.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="project">
+		<div class="project-title">
+			<h3 style="margin:0">Software Engineer Intern</h3>
+			<p style="margin:0;">Learning A-Z</p>
+			<p style="margin:0;">May 2020 - August 2020</p>
+			<a class="link" href="https://github.com/jushutch/LAZ-Book-Search" target="_blank">
+				View on GitHub
+			</a>
+			<br>
+			<a href="https://www.learninga-z.com/" target="_blank">
+				<img src="images/LAZ-logo.png" alt="Learning A-Z Website" height="40px">
+			</a>
+		</div>
+		<div class="project-details">
+			<ul>
+				<li>
+					Implemented a user-facing search feature using object-oriented PHP patterns, AngularJS components,
+					complex MySQL statements, Solr full-text search indexing, and Git for version control. Project
+					consisted of 1,300 lines of code across 21 files and included unit tests developed with the
+					PHPUnit framework that reached 88% line coverage.
+				</li>
+				<li>
+					Communicated frequently with a mentor and a team of 90+ engineers to learn the existing product
+					codebase.
+				</li>
+				<li>
+					Researched web application technology stacks and presented findings in a live demonstration that
+					outlined how to stand up the LAMP stack on a Digital Ocean server in 10 minutes using Git and
+					GitHub for development and deployment.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="project">
+		<div class="project-title">
+			<h3 style="margin:0;">Writer</h3>
+			<p style="margin:0;">Arts at Michigan</p>
+			<p style="margin:0;">University of Michigan</p>
+			<p style="margin:0;">Feb 2019 - Current</p>
+			<a href="http://artsatmichigan.umich.edu/ink/author/justin-hutchins/" target="_blank">
+				<img src="images/arts-ink.png" alt="Arts Ink Website" height="40px">
+			</a>
+		</div>
+		<div class="project-details">
+			<ul>
+				<li>
+					Established the Hidden Gems column on the University of Michigan's
+					<i>
+						<a class="link" href="http://artsatmichigan.umich.edu/ink/author/justin-hutchins/"
+							target="_blank">arts, ink.</a>
+					</i>
+					blog. Wrote weekly articles about personal passions related to art including music reviews, art
+					critiques, and the intersectionality of art and computer science.
+				</li>
+				<li>
+					Engaged with readers in comments, developed original branding, created authentic content, and
+					utilized social media to gain consistent readers and develop a trusted reputation.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="project">
+		<div class="project-title">
+			<h3 style="margin:0;">Stacks Assistant </h3>
+			<p style="margin:0;">Law Library</p>
+			<p style="margin:0;">University of Michigan</p>
+			<p style="margin:0;">Jan 2020 - Mar 2020</p>
+			<a href="https://www.law.umich.edu/library/home/Pages/default.aspx" target="_blank">
+				<img src="images/block-m-maize.png" alt="Law Library Website" height="40px">
+			</a>
+		</div>
+		<div class="project-details">
+			<ul style="margin-bottom:50px;">
+				<li>
+					Worked closely with a small team to complete large reshelving projects by shifting hundreds of books.
+				</li>
+				<li>
+					Performed equipment checks on printers, computers, and scanners throughout the library.
+				</li>
+				<li>
+					Completed a variety of tasks, such as collecting books from drop off boxes, sorting and shelving
+					returned
+					books, and doing routine library checks for misplaced material.
+				</li>
+			</ul>
+		</div>
+	</div> -->
 
-    <!-- Experience  -->
+    <!-- Education  -->
     <div class="bar" style="height:auto;">
-        <h1 class="page-header" id="work">Experience</h1>
-        <hr class="header-line" style="width:200px;" />
-        <div class="project">
-            <div class="project-title">
-                <h3 style="margin:0">Software Engineer Intern</h3>
-                <p style="margin:0;">CrowdStrike</p>
-                <p style="margin:0;">May 2021 - August 2021</p>
-                <a href="https://www.crowdstrike.com/" target="_blank">
-                    <img src="images/crowdstrike-logo.png" alt="CrowdStrike Website" height="40px">
-                </a>
-            </div>
-            <div class="project-details">
-                <ul>
-                    <li>
-                        Migrated cloud microservices written in Go to modules using Jenkins CI pipelines and Spinnaker
-                        for CD to a multi-cloud environment. Documented migration workflow and presented work and
-                        findings to the Cloud engineering team.
-                    </li>
-                    <li>
-                        Independently developed a tool using bash and python to create directed graphs of Go package dependencies.
-                        The tool was adopted by the Cloud Developer Experience team to help visualize and plan the module
-                        migration project.
-                    </li>
-                    <li>
-                        Worked as an SDET and improved the quality of existing features by writing integration tests to
-                        validate public microservice API endpoints using the pytest framework.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-title">
-                <h3 style="margin:0">Software Engineer Associate</h3>
-                <p style="margin:0;">Learning A-Z</p>
-                <p style="margin:0;">September 2020 - April 2021</p>
-                <a href="https://www.learninga-z.com/" target="_blank">
-                    <img src="images/LAZ-logo.png" alt="Learning A-Z Website" height="40px">
-                </a>
-            </div>
-            <div class="project-details">
-                <ul>
-                    <li>
-                        Navigated a code base of over 80,000 files to diagnose issues, locate problematic code, and
-                        develop an effective solution while increasing the quality of the existing code. Created detailed
-                        bug reports using FogBugz issue tracking software.
-                    </li>
-                    <li>
-                        Followed an efficient workflow, using Git and GitLab to create branches with proposed fixes and
-                        open merge requests to patch changes into the product. Successfully merged 26 branches after
-                        undergoing code review by senior engineers.
-                    </li>
-                    <li>
-                        Participated in weekly code inspections with a team of 7 engineers of varying experience to
-                        refine clean code practices.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-title">
-                <h3 style="margin:0">Software Engineer Intern</h3>
-                <p style="margin:0;">Learning A-Z</p>
-                <p style="margin:0;">May 2020 - August 2020</p>
-                <a class="link" href="https://github.com/jushutch/LAZ-Book-Search" target="_blank">
-                    View on GitHub
-                </a>
-                <br>
-                <a href="https://www.learninga-z.com/" target="_blank">
-                    <img src="images/LAZ-logo.png" alt="Learning A-Z Website" height="40px">
-                </a>
-            </div>
-            <div class="project-details">
-                <ul>
-                    <li>
-                        Implemented a user-facing search feature using object-oriented PHP patterns, AngularJS components,
-                        complex MySQL statements, Solr full-text search indexing, and Git for version control. Project
-                        consisted of 1,300 lines of code across 21 files and included unit tests developed with the
-                        PHPUnit framework that reached 88% line coverage.
-                    </li>
-                    <li>
-                        Communicated frequently with a mentor and a team of 90+ engineers to learn the existing product codebase.
-                    </li>
-                    <li>
-                        Researched web application technology stacks and presented findings in a live demonstration that
-                        outlined how to stand up the LAMP stack on a Digital Ocean server in 10 minutes using Git and
-                        GitHub for development and deployment.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-title">
-                <h3 style="margin:0;">Writer</h3>
-                <p style="margin:0;">Arts at Michigan</p>
-                <p style="margin:0;">University of Michigan</p>
-                <p style="margin:0;">Feb 2019 - Current</p>
-                <a href="http://artsatmichigan.umich.edu/ink/author/justin-hutchins/" target="_blank">
-                    <img src="images/arts-ink.png" alt="Arts Ink Website" height="40px">
-                </a>
-            </div>
-            <div class="project-details">
-                <ul>
-                    <li>
-                        Established the Hidden Gems column on the University of Michigan's
-                        <i>
-                            <a class="link" href="http://artsatmichigan.umich.edu/ink/author/justin-hutchins/" target="_blank">arts, ink.</a>
-                        </i>
-                        blog. Wrote weekly articles about personal passions related to art including music reviews, art
-                        critiques, and the intersectionality of art and computer science.
-                    </li>
-                    <li>
-                        Engaged with readers in comments, developed original branding, created authentic content, and
-                        utilized social media to gain consistent readers and develop a trusted reputation.
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="project">
-            <div class="project-title">
-                <h3 style="margin:0;">Stacks Assistant </h3>
-                <p style="margin:0;">Law Library</p>
-                <p style="margin:0;">University of Michigan</p>
-                <p style="margin:0;">Jan 2020 - Mar 2020</p>
-                <a href="https://www.law.umich.edu/library/home/Pages/default.aspx" target="_blank">
-                    <img src="images/block-m-maize.png" alt="Law Library Website" height="40px">
-                </a>
-            </div>
-            <div class="project-details">
-                <ul style="margin-bottom:50px;">
-                    <li>
-                        Worked closely with a small team to complete large reshelving projects by shifting hundreds of books.
-                    </li>
-                    <li>
-                        Performed equipment checks on printers, computers, and scanners throughout the library.
-                    </li>
-                    <li>
-                        Completed a variety of tasks, such as collecting books from drop off boxes, sorting and shelving returned
-                        books, and doing routine library checks for misplaced material.
-                    </li>
-                </ul>
-            </div>
-        </div>
+		<h1 class="page-header" id="education">Education</h1>
+		<hr class="header-line" style="width:200px;" />
+		<div style="text-align:center;">
+			<div
+				style="vertical-align:top;display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;vert-align: top">
+				<div style="text-align:center;">
+					<img src="images/block-m-maize.png" alt="University of Michigan logo" style="height:100px;" />
+				</div>
+				<div style="text-align:center;width:auto;">
+					<p class="education">
+						University of Michigan, Ann Arbor<br />Class of 2022, &#72onors Program<br />
+						L.S.A. &#67omputer Science B.S.<br />G.P.A.: 3.5/4.0
+					</p>
+				</div>
+			</div>
+			<!-- <ul class="coursework">
+				<li style="font-size:20px;color:#FFCB05;">Relevant Coursework</li>
+				<li>Software Engineering</li>
+				<li>Computer Science Pragmatics</li>
+				<li>Foundations of Computer Science</li>
+				<li>Introduction to Computer Security</li>
+				<li>Data Structures and Algorithms</li>
+				<li>Programming and Data Structures</li>
+				<li>Elementary Programming Concepts</li>
+				<li>Introduction to Computer Organization</li>
+				<li>Discrete Mathematics</li>
+				<li>Introduction to Statistics and Data Analysis</li>
+				<li>Honors Calculus I</li>
+				<li>Honors Calculus II</li>
+				<li>Multivariable and Vector Calculus</li>
+				<li>Honors Physics I: Kinematics</li>
+				<li>Physics II: Electricity and Magnetism</li>
+			</ul> -->
+		</div>
     </div>
     <img hidden src="images/flag.png" alt="Hidden Flag">
-
-    <!--        <div class="bar" style="height:auto;">-->
-    <!--            <h1 class="page-header" id="recommendations">Recommendations</h1>-->
-    <!--            <hr class="header-line" style="width:200px;" />-->
-    <!--            <div class="project">-->
-    <!--                <p class="project-details">I acted as Justin's mentor during a summer 2020 internship program at Learning A-Z. Justin is a <span class="emphasis">well-spoken,-->
-    <!--                effective communicator</span>. I was impressed by his list of achievements and projects for a relatively young college student.-->
-    <!--                    Throughout the summer, Justin capitalized on opportunities to further expand not only his <span class="emphasis">technical knowledge</span>,-->
-    <!--                    but also his <span class="emphasis">interpersonal skills</span>. I was impressed that during his first week, he volunteered to present-->
-    <!--                    in front of a team of almost 100 engineers. He successfully and smoothly completed his major summer project,-->
-    <!--                    which was a new student-facing book search. This included developing over <span class="emphasis">all layers of the web application-->
-    <!--                    stack</span> and interfacing with an internal search server. It was a pleasure to work with Justin and I have high-->
-    <!--                    confidence he will achieve whatever goals he sets. He will be a <span class="emphasis">great asset</span> in any organization lucky enough-->
-    <!--                    to take him in.-->
-    <!--                </p>-->
-    <!--            </div>-->
-    <!--        </div>-->
 
     <!-- Projects  -->
     <h1 class="page-header" id="projects">Projects</h1>
     <hr class="header-line" style="width:150px;" />
+		<div class="project">
+			<div class="project-title">
+				<h3 style="margin:0;">swiping_card_deck</h3>
+				<p style="margin:0;">October 2021 - Present</p>
+				<a class="link" href="https://github.com/jushutch/swiping_card_deck"
+					target="_blank">
+					View on GitHub
+				</a>
+				<br>
+				<a href="https://pub.dev/packages/swiping_card_deck" target="_blank">
+					<img src="images/pub_dev_logo.png" alt="Package on pub.dev" height="40px">
+				</a>
+			</div>
+			<div class="project-details">
+				<ul>
+					<li>
+						Published an open-source Flutter package supported on iOS, Android, and web that follows Dart file conventions, uses
+						standardized static analysis and linting, includes public dartdoc documentation, and is null safe.
+					</li>
+					<li>
+						Maintained the project on GitHub by writing documentation for contributors, triaging issues, reviewing pull requests,
+						and tagging and releasing updates using semantic versioning.
+					<li>
+						Utilized GitHub Actions to run a suite of tests on proposed changes and maintain a minimum of 90% line coverage.
+					</li>
+				</ul>
+			</div>
+		</div>
     <div class="project">
         <div class="project-title">
             <h3 style="margin:0;">Flutter</h3>
             <p style="margin:0;">April 2021</p>
-            <p style="margin:0;">Independent</p>
             <a class="link" href="Flutter.pdf" target="_blank">
                 Writeup of Experience
             </a>
@@ -318,7 +365,6 @@
         <div class="project-title">
             <h3 style="margin:0;">Library System</h3>
             <p style="margin:0;">June 2020</p>
-            <p style="margin:0;">Independent</p>
             <a class="link" href="https://github.com/jushutch/Online-Library" target="_blank">
                 View on GitHub
             </a>
@@ -340,7 +386,7 @@
             </ul>
         </div>
     </div>
-    <div class="project">
+    <!-- <div class="project">
         <div class="project-title">
             <h3 style="margin:0;">Pipeline Processor Simulator</h3>
             <p style="margin:0;">April 2020</p>
@@ -411,7 +457,7 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 
     <!-- Extracurricular  -->
     <div class="bar" style="height:auto;">
@@ -421,22 +467,20 @@
             <div class="project-title">
                 <h3 style="margin:0;">Michigan Hackers</h3>
                 <p style="margin:0;">Security Team Lead</p>
-                <p style="margin:0;">April 2020 - Current</p>
-                <a href="https://michiganhackers.org" target="_blank">
+                <p style="margin:0;">April 2020 - April 2022</p>
+                <a href="https://michhackers.com/" target="_blank">
                     <img src="images/michigan-hackers.ico" alt="Michigan Hackers Website" height="40px">
                 </a>
             </div>
             <div class="project-details">
                 <ul style="margin-bottom:0;">
                     <li>
-                        Worked together with the executive board and ~20 other team leads to plan and host virtual events.
+						Prepared for and competed in multiple Capture the <a class="link" href="flag.html">Flag</a> competitions including the University of Texas CTF where our team
+						of 4 placed in the 77th percentile out of 697 teams.
                     </li>
                     <li>
-                        Prepared for and competed in multiple Capture the <a class="link" href="flag.html">Flag</a> competitions with a team of 10 members.
-                    </li>
-                    <li>
-                        Developed weekly practice challenges and presented solutions in live demonstrations to teach new
-                        members about web security, app security, and forensics.
+						Developed weekly practice challenges and presented solutions in live demonstrations to teach new members about web
+						security, app security, forensics, reverse engineering, and cryptography.
                     </li>
                 </ul>
             </div>
@@ -466,28 +510,36 @@
     <hr class="header-line" style="width:100px;" />
     <div class="skill-container">
         <ul style="margin-bottom:50px;list-style-type:none;padding-left:0;">
+			<li class="skill">
+				<span class="skill-name">Go</span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</li>
+			<li class="skill">
+				<span class="skill-name">Python</span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</li>
             <li class="skill">
                 <span class="skill-name">C++</span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <span class="dot"></span>
             </li>
-            <li class="skill">
-                <span class="skill-name">C</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">PHP</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
+			<li class="skill">
+				<span class="skill-name">Git</span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</li>
             <li class="skill">
                 <span class="skill-name">Flutter</span>
                 <span class="dot"></span>
@@ -495,34 +547,26 @@
                 <span class="dot"></span>
                 <span class="dot"></span>
             </li>
-            <li class="skill">
-                <span class="skill-name">Python</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">Go</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">Unix</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">Git</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
+			<li class="skill">
+				<span class="skill-name">C</span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</li>
+			<li class="skill">
+				<span class="skill-name">PHP</span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</li>
+			<li class="skill">
+				<span class="skill-name">JavaScript</span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</li>
             <li class="skill">
                 <span class="skill-name">HTML</span>
-                <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
             </li>
@@ -530,25 +574,9 @@
                 <span class="skill-name">MySQL</span>
                 <span class="dot"></span>
                 <span class="dot"></span>
-                <span class="dot"></span>
             </li>
             <li class="skill">
                 <span class="skill-name">CSS</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">AngularJS</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">JavaScript</span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </li>
-            <li class="skill">
-                <span class="skill-name">R</span>
                 <span class="dot"></span>
             </li>
         </ul>
@@ -559,8 +587,8 @@
         <div class="footer-menu">
             <ul style="list-style-type:none;margin:0;">
                 <li><a href="#about">About</a></li>
-                <li><a href="#education" id="m-ed">Education</a></li>
                 <li><a href="#work">Experience</a></li>
+				<li><a href="#education" id="m-ed">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#extra">Extracurricular</a></li>
                 <li><a href="#skills" id="m-skills">Skills</a></li>
@@ -572,13 +600,10 @@
                 <h1>Justin Time Hutchins</h1>
             </a>
         </div>
-        <i id="tag">&#169 Justin Hutchins 2021</i>
+        <i id="tag">&#169 Justin Hutchins 2023</i>
         <div class="links">
             <a href="https://github.com/jushutch" target="_blank">
                 <img class="logo" alt="Find me on Github" src="images/GitHub-Mark-Light-120px-plus.png" />
-            </a>
-            <a href="https://www.instagram.com/justin.hutchins/" target="_blank">
-                <img class="logo" alt="Find me on Instagram" src="images/glyph-logo_May2016.png" />
             </a>
             <a href="mailto:jushutch@umich.edu" target="_blank">
                 <img class="logo" alt="Email me" src="images/gmail_logo.png" />

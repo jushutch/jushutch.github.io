@@ -1,7 +1,17 @@
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 735px) {
     .project .project-title {
         text-align: center;
     }
+}
+
+@media screen and (max-width: 755px) {
+	.about {
+		display: block;
+	}
+
+	.about #intro {
+		margin: auto;
+	}
 }
 
 @media screen and (max-width: 1000px) {

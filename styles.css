@@ -221,6 +221,22 @@ img:not(.logo):not(#menu-button):hover {
     opacity: 0;
 }
 
+.about {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.about #intro {
+	max-width: 500px;
+	color: white;
+	margin: 0;
+	text-align: left;
+	display: inline-block;
+	padding: 30px;
+}
+
 .profile-picture {
     vertical-align:top;
     height:180px;
@@ -276,7 +292,6 @@ img:not(.logo):not(#menu-button):hover {
     vertical-align: middle;
     background-color: #FFCB05;
     border-radius: 50%;
-    display: inline-block;
 }
 
 .project {
