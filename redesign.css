@@ -1,0 +1,192 @@
+/* TAGS */
+body {
+	text-align: center;
+	margin: 0px;
+	font-family: 'Helvetica Neue', 'IBM Plex Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 500;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 21px;
+	font-weight: 300;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 40px;
+	font-weight: 500;
+	margin: 0px;
+}
+
+/* ANIMATIONS */
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation-fill-mode: backwards;
+	animation-name: fade-in;
+	animation-duration: 2s;
+	animation-fill-mode: backwards;
+}
+
+.delay-small {
+	animation-delay: 0.5s;
+}
+
+.delay-medium {
+	animation-delay: 0.9s;
+}
+
+/* SIZES */
+.small {
+	height: 60px;
+	width: 60px;
+}
+
+.medium {
+	height: 95px;
+	width: 95px;
+}
+
+.large {
+	height: 180px;
+	width: 180px;
+}
+
+.filtered {
+	filter: brightness(85%) saturate(0.1);
+	opacity: 0.94;
+}
+
+.xxx-large {
+	min-height: 600px;
+	min-width: 600px;
+}
+
+/* COLORS */
+.green {
+	background-color: rgba(79, 94, 39, 0.63);
+}
+
+.white {
+	background-color: rgba(255, 255, 255, 0.63);
+}
+
+.navy-blue {
+	background-color: rgba(62, 71, 112, 0.63);
+}
+
+.flutter-blue {
+	background-color: rgba(64, 196, 255, 1);
+}
+
+.flutter-blue-light {
+	background-color: rgba(203, 239, 255, 0.90);
+}
+
+.maize {
+	background-color: rgba(253, 230, 145, 0.83);
+}
+
+/* CLASSES */
+.circle {
+	vertical-align: middle;
+	border-radius: 50%;
+	position: absolute;
+	transition: .5s ease;
+}
+
+.circle:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.section {
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+}
+
+.project {
+	height: 844px;
+	width: 100%;
+	margin: 0;
+}
+
+.project-wrapper {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+}
+
+.project-details {
+	width: 350px;
+	text-align: left;
+	color: white;
+	font-size: 20px;
+	position: absolute;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	padding: 10px;
+	margin: 0;
+	height: 30px;
+	filter: invert(100%);
+}
+
+.project-header {
+	text-align: right;
+	margin: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/* IDS */
+#menu-icon {
+	position: absolute;
+	font-size: 30px;
+	right: 40px;
+	top: 55px;
+}
+
+#profile-picture {
+	height: 260px;
+}
+
+#resume-link {
+	border-style: solid;
+	border-color: black;
+	border-radius: 50px;
+	margin-top: 40px;
+	top: 15px;
+	border-width: 1px;
+	position: relative;
+	padding: 5px 15px;
+}
