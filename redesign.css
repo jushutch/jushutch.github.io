@@ -128,15 +128,18 @@ h3 {
 }
 
 .project {
-	height: 844px;
+	height: 100vh;
 	width: 100%;
 	margin: 0;
+	max-height: 850px;
 }
 
 .project-wrapper {
 	overflow: hidden;
 	position: relative;
 	height: 100%;
+	max-width: 1000px;
+	margin: auto;
 }
 
 .project-details {
