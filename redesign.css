@@ -105,6 +105,14 @@ h3 {
 	background-color: rgba(203, 239, 255, 0.90);
 }
 
+.crowdstrike-red {
+	background-color: rgba(255, 59, 26, 1);
+}
+
+.crowdstrike-red-light {
+	background-color: rgba(255, 179, 166, 0.9);
+}
+
 .maize {
 	background-color: rgba(253, 230, 145, 0.83);
 }
