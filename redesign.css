@@ -139,7 +139,15 @@ h3 {
 	height: 100vh;
 	width: 100%;
 	margin: 0;
-	max-height: 850px;
+	max-height: 900px;
+	min-height: 800px;
+}
+
+.project-header {
+	margin: 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .project-wrapper {
@@ -152,7 +160,6 @@ h3 {
 
 .project-details {
 	width: 350px;
-	text-align: left;
 	color: white;
 	font-size: 20px;
 	position: absolute;
@@ -164,19 +171,19 @@ h3 {
 	justify-content: center;
 }
 
+.align-left {
+	text-align: left;
+}
+
+.align-right {
+	text-align: right;
+}
+
 .logo {
 	padding: 10px;
 	margin: 0;
 	height: 30px;
 	filter: invert(100%);
-}
-
-.project-header {
-	text-align: right;
-	margin: 10px;
-	position: absolute;
-	top: 0;
-	right: 0;
 }
 
 /* IDS */
