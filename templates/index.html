@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://jushutch.github.io/">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="static/js/dynamic.js"></script>
-    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="static/images/logo.png" />
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/queries.css">
 </head>
@@ -27,8 +27,14 @@
     {% include "menu.html" %}
     {% include "header.html" %}
     <div class="home-page">
-        {% include "about.html" %}
-        {% include "education.html" %}
+        <div class="container-fluid">
+            <div class="row pb-4 justify-content-center align-items-center">
+                {% include "about.html" %}
+            </div>
+            <div class="row pb-4 justify-content-center align-items-center">
+                {% include "education.html" %}
+            </div>
+        </div>
         {% include "experience.html" %}
         {% include "projects.html" %}
         {% include "extracurricular.html" %}

@@ -19,7 +19,7 @@
     <meta property="og:url" content="https://jushutch.github.io/">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="static/js/dynamic.js"></script>
-    <link rel="shortcut icon" type="image/png" href="images/logo.png" />
+    <link rel="shortcut icon" type="image/png" href="static/images/logo.png" />
     <link rel="stylesheet" href="static/css/styles.css">
     <link rel="stylesheet" href="static/css/queries.css">
 </head>
@@ -61,66 +61,78 @@
     <div id="header-image"></div>
 </div>
     <div class="home-page">
-        
+        <div class="container-fluid">
+            <div class="row pb-4 justify-content-center align-items-center">
+                
 <!-- About  -->
-<div class="bar" style="padding-bottom:30px;">
-    <h1 class="page-header" id="about">About</h1>
+<div class="row pb-3">
+    <h2 id="about">About</h2>
     <hr class="header-line" style="width:110px;" />
-    <div class="about" style="text-align:center;">
-        <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
-            <span style="padding-left:2em;"></span>
-            A Senior at the University of &amp;#77ichigan, pursuing a B.S. in Computer Science with a focus on Software Engineering. My primary experiences are in LAMP-stack web development and cloud engineering in a microservice architecture. I&#39;m interested in gaining more experience with software development infrastructure and testing, with an emphasis on acquiring new skills and gaining a better understanding of the software development process. Clean code, documentation, security, and quality assurance are all extremely important to me when developing software, and I pride myself on my strong communication skills, passion for learning, and willingness to try new things.
-        </p>
-        <img src="static/images/headshot.png" alt="Profile Picture" class="profile-picture"/>
-    </div>
 </div>
-        
+<div class="col-12 col-sm-7 col-lg-5">
+    <p>
+        <span style="padding-left:2em;"></span>
+        A Senior at the University of &amp;#77ichigan, pursuing a B.S. in Computer Science with a focus on Software Engineering. My primary experiences are in LAMP-stack web development and cloud engineering in a microservice architecture. I&#39;m interested in gaining more experience with software development infrastructure and testing, with an emphasis on acquiring new skills and gaining a better understanding of the software development process. Clean code, documentation, security, and quality assurance are all extremely important to me when developing software, and I pride myself on my strong communication skills, passion for learning, and willingness to try new things.
+    </p>
+</div>
+<div class="col-7 col-sm-3 col-lg-2">
+    <img src="static/images/headshot.png" alt="Profile Picture" class="img-fluid"/>
+</div>
+            </div>
+            <div class="row pb-4 justify-content-center align-items-center">
+                
 <!-- Education  -->
-<h1 class="page-header" id="education">Education</h1>
-<hr class="header-line" style="width:200px;" />
-<div style="text-align:center;">
-    <div style="vertical-align:top;display:inline-block;text-align:center;padding-right:15px;padding-top:30px;padding-left:15px;vert-align: top">
-        <div style="text-align:center;">
-            <img src="static/images/block-m-maize.png" alt="University of Michigan logo" style="height:100px;" />
+<div class="row">
+    <h2 id="education">Education</h2>
+    <hr class="header-line" style="width:200px;" />
+</div>
+<div class="col-10 col-sm-4">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <img class="img-fluid p-3" src="static/images/block-m-maize.png" alt="University of Michigan logo"/>
         </div>
-        <div style="text-align:center;width:auto;">
-            <p class="education">
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-6">
+            <p>
                 University of Michigan, Ann Arbor<br />Class of 2022, &#72onors Program<br />
                 L.S.A. &#67omputer Science B.S.<br />G.P.A.: 3.5/4.0
             </p>
         </div>
     </div>
-    <ul class="coursework">
-        <li style="font-size:20px;color:#FFCB05;">Relevant Coursework</li>
-        
-            <li>Operating Systems</li>
-        
-            <li>Web Systems</li>
-        
-            <li>Programming Languages</li>
-        
-            <li>Software Engineering</li>
-        
-            <li>Computer Science Pragmatics</li>
-        
-            <li>Foundations of Computer Science</li>
-        
-            <li>Introduction to Computer Security</li>
-        
-            <li>Data Structures and Algorithms</li>
-        
-            <li>Programming and Data Structures</li>
-        
-            <li>Elementary Programming Concepts</li>
-        
-            <li>Introduction to Computer Organization</li>
-        
-            <li>Discrete Mathematics</li>
-        
-            <li>Introduction to Statistics and Data Analysis</li>
-        
-    </ul>
 </div>
+<ul class="col-11 col-sm-8 coursework">
+    <li style="font-size:20px;color:#FFCB05;">Relevant Coursework</li>
+    
+        <li>Operating Systems</li>
+    
+        <li>Web Systems</li>
+    
+        <li>Programming Languages</li>
+    
+        <li>Software Engineering</li>
+    
+        <li>Computer Science Pragmatics</li>
+    
+        <li>Foundations of Computer Science</li>
+    
+        <li>Introduction to Computer Security</li>
+    
+        <li>Data Structures and Algorithms</li>
+    
+        <li>Programming and Data Structures</li>
+    
+        <li>Elementary Programming Concepts</li>
+    
+        <li>Introduction to Computer Organization</li>
+    
+        <li>Discrete Mathematics</li>
+    
+        <li>Introduction to Statistics and Data Analysis</li>
+    
+</ul>
+            </div>
+        </div>
         
 <!-- Experience  -->
 <div class="bar" style="height:auto;">

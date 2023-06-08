@@ -1,13 +1,15 @@
 
 <!-- About  -->
-<div class="bar" style="padding-bottom:30px;">
-    <h1 class="page-header" id="about">About</h1>
+<div class="row pb-3">
+    <h2 id="about">About</h2>
     <hr class="header-line" style="width:110px;" />
-    <div class="about" style="text-align:center;">
-        <p style="max-width:500px;color:white;margin:0 auto;text-align:left;display:inline-block;padding:30px;">
-            <span style="padding-left:2em;"></span>
-            {{about.text}}
-        </p>
-        <img src="{{about.img}}" alt="Profile Picture" class="profile-picture"/>
-    </div>
+</div>
+<div class="col-12 col-sm-7 col-lg-5">
+    <p>
+        <span style="padding-left:2em;"></span>
+        {{about.text}}
+    </p>
+</div>
+<div class="col-7 col-sm-3 col-lg-2">
+    <img src="{{about.img}}" alt="Profile Picture" class="img-fluid"/>
 </div>
